@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:58:29 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/07 20:29:10 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/09 20:56:00 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,13 @@ int	ft_test(char *n)
 
 	i1 = atoi(n);
 	i2 = ft_atoi(n);
-	ft_putnbr_test(i1);
-	ft_putchar_test(' ');
-	ft_putnbr_test(i2);
-	ft_putchar_test('\n');
+	if (0)
+	{
+		ft_putnbr_test(i1);
+		ft_putchar_test(' ');
+		ft_putnbr_test(i2);
+		ft_putchar_test('\n');
+	}
 	return (i1 == i2);
 }
 
