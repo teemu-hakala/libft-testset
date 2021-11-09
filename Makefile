@@ -6,7 +6,7 @@
 #    By: thakala <thakala@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/04 19:05:04 by thakala           #+#    #+#              #
-#    Updated: 2021/11/09 19:36:23 by thakala          ###   ########.fr        #
+#    Updated: 2021/11/09 21:14:05 by thakala          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -99,15 +99,16 @@ LIB_ROOT = ../$(LIB_NAME)
 .PHONY: $(FUNCTIONS)
 
 all: subsystem \
-	$(FUNCTIONS) \
-	norminette
+	norminette \
+	$(FUNCTIONS)
 
 #Compile libtest.a
 subsystem:
 	$(MAKE) -C $(LIB_DIR)
 
 norminette:
-	$(shell norminette $(foreach s, $(SRCS), $(addprefix $(SRC_DIR)/, $(s))))
+	norminette $(foreach s, $(SRCS), $(addprefix $(SRC_DIR)/, $(s)))
+#	$(shell norminette $(foreach s, $(SRCS), $(addprefix $(SRC_DIR)/, $(s))))
 
 foreach:
 	$(foreach ft, $(FUNCTIONS), \
