@@ -6,13 +6,13 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 13:33:42 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/08 13:55:39 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/10 16:35:59 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_tests.h"
-#include "../_test_ft/includes/test_ft.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 static int	ft_test(char *s)
 {
@@ -28,7 +28,7 @@ static int	ft_test(char *s)
 	{
 		free(std_calloc);
 		free(ft_clear);
-		ft_putstr_test("Memory allocation failure: calloc or strdup");
+		printf("Memory allocation failure: calloc or strdup");
 		return (1);
 	}
 	ft_strclr(ft_clear);
@@ -43,8 +43,8 @@ int	main(void)
 	if (ft_test("String to be cleared.")
 		|| ft_test(""))
 	{
-		ft_putstr_test("KO: ft_strclr");
+		printf("KO: ft_strclr");
 		return (1);
 	}
-	ft_putstr_test("OK: ft_strclr");
+	printf("OK: ft_strclr");
 }
