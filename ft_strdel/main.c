@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 18:34:11 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/10 18:35:29 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/10 18:36:45 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ static int	ft_test(char *s)
 	string_copy = string;
 	if (0)
 		ft_putstr_len(string, length);
-	ft_strdel((void **)&string);
+	ft_strdel(&string);
 	if (0)
 		ft_putstr_len(string_copy, length);
 	if (!string)
