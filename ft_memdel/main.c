@@ -6,12 +6,13 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 12:23:09 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/07 20:08:56 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/10 17:58:56 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_tests.h"
-#include "../_test_ft/includes/test_ft.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 static void	ft_putstr_len(char *string, size_t length)
 {
@@ -19,8 +20,8 @@ static void	ft_putstr_len(char *string, size_t length)
 
 	i = 0;
 	while (i++ < length)
-		ft_putchar_test(*string++);
-	ft_putchar_test('\n');
+		printf("%c", *string++);
+	printf("\n");
 }
 
 static int	ft_test(char *s)
@@ -32,9 +33,11 @@ static int	ft_test(char *s)
 	string = strdup(s);
 	length = strlen(string);
 	string_copy = string;
-	ft_putstr_len(string, length);
+	if (0)
+		ft_putstr_len(string, length);
 	ft_memdel((void **)&string);
-	ft_putstr_len(string_copy, length);
+	if (0)
+		ft_putstr_len(string_copy, length);
 	if (!string)
 		return (1);
 	return (0);
@@ -42,9 +45,8 @@ static int	ft_test(char *s)
 
 int	main(void)
 {
-	ft_memdel(NULL);
 	if (ft_test("Test string."))
-		ft_putstr_test("OK: ft_memdel");
+		printf("OK: ft_memdel\n");
 	else
-		ft_putstr_test("KO: ft_memdel");
+		printf("KO: ft_memdel\n");
 }

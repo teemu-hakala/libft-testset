@@ -6,13 +6,13 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 19:07:04 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/08 19:07:35 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/10 17:32:35 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_tests.h"
-#include "../_test_ft/includes/test_ft.h"
 #include <ctype.h>
+#include <stdio.h>
 
 int	main(void)
 {
@@ -23,10 +23,10 @@ int	main(void)
 	{
 		if (isprint(c) != ft_isprint(c))
 		{
-			ft_putstr_test("KO: ft_isprint");
-			ft_putstr_test((char *)&c);
+			printf("KO: ft_isprint\n");
+			printf("%s", (char *)&c);
 		}
 		c++;
 	}
-	ft_putstr_test("OK: ft_isprint");
+	printf("OK: ft_isprint\n");
 }

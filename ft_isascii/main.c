@@ -6,13 +6,13 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 06:23:10 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/05 06:23:35 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/10 17:31:19 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_tests.h"
-#include "../_test_ft/includes/test_ft.h"
 #include <ctype.h>
+#include <stdio.h>
 
 int	main(void)
 {
@@ -23,10 +23,10 @@ int	main(void)
 	{
 		if (isascii(c) != ft_isascii(c))
 		{
-			ft_putstr_test("KO: ft_isascii");
-			ft_putstr_test((char *)&c);
+			printf("KO: ft_isascii\n");
+			printf("%s\n", (char *)&c);
 		}
 		c++;
 	}
-	ft_putstr_test("OK: ft_isascii");
+	printf("OK: ft_isascii\n");
 }
