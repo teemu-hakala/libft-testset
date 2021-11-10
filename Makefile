@@ -6,7 +6,7 @@
 #    By: thakala <thakala@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/04 19:05:04 by thakala           #+#    #+#              #
-#    Updated: 2021/11/09 21:14:05 by thakala          ###   ########.fr        #
+#    Updated: 2021/11/10 10:50:39 by thakala          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -100,6 +100,7 @@ LIB_ROOT = ../$(LIB_NAME)
 
 all: subsystem \
 	norminette \
+	evaldirectories \
 	$(FUNCTIONS)
 
 #Compile libtest.a
@@ -109,6 +110,9 @@ subsystem:
 norminette:
 	norminette $(foreach s, $(SRCS), $(addprefix $(SRC_DIR)/, $(s)))
 #	$(shell norminette $(foreach s, $(SRCS), $(addprefix $(SRC_DIR)/, $(s))))
+
+evaldirectories:
+	mkdir -p $(foreach f, $(FUNCTIONS), $(addprefix $(PRG_DIR)/, $(f)))
 
 foreach:
 	$(foreach ft, $(FUNCTIONS), \
