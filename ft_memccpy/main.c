@@ -6,12 +6,12 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 07:59:44 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/06 12:22:09 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/10 14:31:31 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_tests.h"
-#include "../_test_ft/includes/test_ft.h"
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -39,14 +39,17 @@ static int	ft_display_cmp(char *std_res, char *ft_res, size_t remaining)
 {
 	size_t	i;
 
-	i = 0;
-	while (i < remaining)
-		ft_putchar_test(std_res[i++]);
-	i = 0;
-	ft_putchar_test('\n');
-	while (i < remaining)
-		ft_putchar_test(ft_res[i++]);
-	ft_putchar_test('\n');
+	if (0)
+	{
+		i = 0;
+		while (i < remaining)
+			printf("%c", std_res[i++]);
+		i = 0;
+		printf("%c", '\n');
+		while (i < remaining)
+			printf("%c", ft_res[i++]);
+		printf("%c", '\n');
+	}
 	return (memcmp(std_res, ft_res, remaining));
 }
 
@@ -69,26 +72,24 @@ static int	ft_test(char *str, char c)
 	char	*std_dst;
 	char	*ft_dst;
 	size_t	length;
+	int		result;
 
 	length = strlen(str);
 	std_dst = (char *)malloc(sizeof(char) * length);
 	ft_dst = (char *)memdup(std_dst, length);
-	if (ft_compare(str, c, std_dst, ft_dst))
-	{
-		free(std_dst);
-		free(ft_dst);
-		ft_putstr_test("KO: ft_memccpy");
-		return (1);
-	}
+	result = ft_compare(str, c, std_dst, ft_dst);
 	free(std_dst);
 	free(ft_dst);
-	return (0);
+	return (result);
 }
 
 int	main(void)
 {
 	if (ft_test("abcdefBghijklmnopq", 'B')
 		|| ft_test("abcdefBghijk\0lmnopq", 'C'))
+	{
+		printf("KO: ft_memccpy");
 		return (1);
-	ft_putstr_test("OK: ft_memccpy");
+	}
+	printf("OK: ft_memccpy");
 }

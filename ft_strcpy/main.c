@@ -6,13 +6,13 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 14:08:03 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/06 14:38:10 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/10 14:37:26 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_tests.h"
-#include "../_test_ft/includes/test_ft.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 static int	ft_test(const char *src)
 {
@@ -26,7 +26,7 @@ static int	ft_test(const char *src)
 	ft_str = (char *)malloc(sizeof(char) * len);
 	if (!std_str || !ft_str)
 	{
-		ft_putstr_test("Memory allocation error!");
+		printf("Memory allocation error!");
 		return (1);
 	}
 	std_str = strcpy(std_str, src);
@@ -42,9 +42,8 @@ int	main(void)
 	if (ft_test("man strcpy")
 		|| ft_test(""))
 	{
-		ft_putstr_test("KO: ft_strcpy");
+		printf("KO: ft_strcpy");
 		return (1);
 	}
-	ft_strcpy(NULL, NULL);
-	ft_putstr_test("OK: ft_strcpy");
+	printf("OK: ft_strcpy");
 }

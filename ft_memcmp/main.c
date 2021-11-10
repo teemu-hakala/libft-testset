@@ -6,13 +6,13 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 11:07:58 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/06 11:36:47 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/10 14:35:08 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_tests.h"
-#include "../_test_ft/includes/test_ft.h"
 #include <string.h>
+#include <stdio.h>
 
 static int	ft_test(const void *arr1, const void *arr2, size_t n)
 {
@@ -32,8 +32,8 @@ int	main(void)
 		|| ft_test_equal("ft_test_equal", 14)
 		|| ft_test("ft_test_unequal", "ft_test-unequal", 16))
 	{
-		ft_putstr_test("KO: ft_memcmp\n");
+		printf("KO: ft_memcmp\n");
 		return (1);
 	}
-	ft_putstr_test("OK: ft_memcmp\n");
+	printf("OK: ft_memcmp\n");
 }

@@ -6,12 +6,12 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 18:06:17 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/07 18:11:54 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/10 14:43:12 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_tests.h"
-#include "../_test_ft/includes/test_ft.h"
+#include <stdio.h>
 
 static int	ft_test(const char *s, const char c)
 {
@@ -23,8 +23,8 @@ int	main(void)
 	if (!ft_test("Unbreakable", 'U')
 		|| !ft_test("Unbreakable", '\0'))
 	{
-		ft_putstr_test("KO: ft_strrchr");
+		printf("KO: ft_strrchr");
 		return (1);
 	}
-	ft_putstr_test("OK: ft_strrchr");
+	printf("OK: ft_strrchr");
 }

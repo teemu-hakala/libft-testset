@@ -6,13 +6,13 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 15:33:46 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/08 18:43:12 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/10 14:33:14 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_tests.h"
-#include "../_test_ft/includes/test_ft.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 static int	ft_test(const char *dst, size_t dst_len,
 	const char *src, size_t len)
@@ -24,7 +24,7 @@ static int	ft_test(const char *dst, size_t dst_len,
 	ft_destination = (char *)malloc(sizeof(char) * dst_len);
 	if (!std_destination || !ft_destination)
 	{
-		ft_putstr_test("Memory allocation error!\n");
+		printf("Memory allocation error!\n");
 		return (1);
 	}
 	std_destination = (char *)memcpy(std_destination, dst, dst_len);
@@ -44,7 +44,7 @@ static int	ft_test_overlap(const char *dstsrc, size_t offset, size_t direction,
 	ft_destinationsource = strdup(dstsrc);
 	if (!std_destinationsource || !ft_destinationsource)
 	{
-		ft_putstr_test("Memory allocation error!\n");
+		printf("Memory allocation error!\n");
 		return (1);
 	}
 	if (!direction)
@@ -70,8 +70,8 @@ int	main(void)
 		|| ft_test_overlap("destinationsource", 3, 0, 5)
 		|| ft_test_overlap("destinationsource", 3, 1, 5))
 	{
-		ft_putstr_test("KO: ft_memmove\n");
+		printf("KO: ft_memmove\n");
 		return (1);
 	}
-	ft_putstr_test("OK: ft_memmove\n");
+	printf("OK: ft_memmove\n");
 }
