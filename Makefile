@@ -6,7 +6,7 @@
 #    By: thakala <thakala@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/04 19:05:04 by thakala           #+#    #+#              #
-#    Updated: 2021/11/10 17:34:09 by thakala          ###   ########.fr        #
+#    Updated: 2021/11/10 18:37:59 by thakala          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -87,7 +87,7 @@ CLANG = gcc
 
 CPL_FLG = -Wall -Wextra -Werror -Wconversion
 
-LIB_NAME = libft-0
+LIB_NAME = libft
 
 SRC_DIR = ../$(LIB_NAME)
 
