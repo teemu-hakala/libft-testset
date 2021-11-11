@@ -1,0 +1,28 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: clang build ft_memcpy_jumps",
+			"command": "/usr/bin/clang",
+			"args": [
+				"-g",
+				"-Wall",
+				"-Wextra",
+				"-Werror",
+				"${workspaceFolder}/main.c",
+				"${workspaceFolder}/ft_memcpy.c",
+				"-o",
+				"${workspaceFolder}/ft_memcpy_jumps"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/clang"
+		}
+	]
+}

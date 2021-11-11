@@ -61,8 +61,8 @@ ft_lstmap"
 for v in $s; do
 	#echo "\$(PRG_DIR)/$v/$v: \$(SRC_DIR)/$v.c \\"
 	#echo "$v/main.c"
-	echo "$v: \$(SRC_DIR)/$v.c $v/main.c"
-	echo "	\$(CLANG) \$(CPL_FLG) \$(SRC_DIR)/$v.c $v/main.c \\"
+	echo "$v: $v/main.c"
+	echo "	\$(CLANG) \$(CPL_FLG) $v/main.c \\"
 	echo "		-L\$(LIB_ROOT) -lft -o \$(PRG_DIR)/$v/$v"
 	echo ""
 done

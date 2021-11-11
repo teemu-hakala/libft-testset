@@ -6,7 +6,7 @@
 #    By: thakala <thakala@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/04 19:05:04 by thakala           #+#    #+#              #
-#    Updated: 2021/11/11 17:12:50 by thakala          ###   ########.fr        #
+#    Updated: 2021/11/11 17:16:26 by thakala          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -121,234 +121,234 @@ foreach2:
 	$(CLANG) $(CPL_FLG) $(ft)/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/$(ft)/$(ft);)
 
-ft_memset: $(LIB_ROOT)/ft_memset.c ft_memset/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_memset.c ft_memset/main.c \
+ft_memset: ft_memset/main.c
+	$(CLANG) $(CPL_FLG) ft_memset/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memset/ft_memset
 
-ft_bzero: $(LIB_ROOT)/ft_bzero.c ft_bzero/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_bzero.c ft_bzero/main.c \
+ft_bzero: ft_bzero/main.c
+	$(CLANG) $(CPL_FLG) ft_bzero/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_bzero/ft_bzero
 
-ft_memcpy: $(LIB_ROOT)/ft_memcpy.c ft_memcpy/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_memcpy.c ft_memcpy/main.c \
+ft_memcpy: ft_memcpy/main.c
+	$(CLANG) $(CPL_FLG) ft_memcpy/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memcpy/ft_memcpy
 
-ft_memccpy: $(LIB_ROOT)/ft_memccpy.c ft_memccpy/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_memccpy.c ft_memccpy/main.c \
+ft_memccpy: ft_memccpy/main.c
+	$(CLANG) $(CPL_FLG) ft_memccpy/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memccpy/ft_memccpy
 
-ft_memmove: $(LIB_ROOT)/ft_memmove.c ft_memmove/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_memmove.c ft_memmove/main.c \
+ft_memmove: ft_memmove/main.c
+	$(CLANG) $(CPL_FLG) ft_memmove/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memmove/ft_memmove
 
-ft_memchr: $(LIB_ROOT)/ft_memchr.c ft_memchr/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_memchr.c ft_memchr/main.c \
+ft_memchr: ft_memchr/main.c
+	$(CLANG) $(CPL_FLG) ft_memchr/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memchr/ft_memchr
 
-ft_memcmp: $(LIB_ROOT)/ft_memcmp.c ft_memcmp/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_memcmp.c ft_memcmp/main.c \
+ft_memcmp: ft_memcmp/main.c
+	$(CLANG) $(CPL_FLG) ft_memcmp/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memcmp/ft_memcmp
 
-ft_strlen: $(LIB_ROOT)/ft_strlen.c ft_strlen/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strlen.c ft_strlen/main.c \
+ft_strlen: ft_strlen/main.c
+	$(CLANG) $(CPL_FLG) ft_strlen/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strlen/ft_strlen
 
-ft_strdup: $(LIB_ROOT)/ft_strdup.c ft_strdup/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strdup.c ft_strdup/main.c \
+ft_strdup: ft_strdup/main.c
+	$(CLANG) $(CPL_FLG) ft_strdup/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strdup/ft_strdup
 
-ft_strcpy: $(LIB_ROOT)/ft_strcpy.c ft_strcpy/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strcpy.c ft_strcpy/main.c \
+ft_strcpy: ft_strcpy/main.c
+	$(CLANG) $(CPL_FLG) ft_strcpy/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strcpy/ft_strcpy
 
-ft_strncpy: $(LIB_ROOT)/ft_strncpy.c ft_strncpy/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strncpy.c ft_strncpy/main.c \
+ft_strncpy: ft_strncpy/main.c
+	$(CLANG) $(CPL_FLG) ft_strncpy/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strncpy/ft_strncpy
 
-ft_strcat: $(LIB_ROOT)/ft_strcat.c ft_strcat/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strcat.c ft_strcat/main.c \
+ft_strcat: ft_strcat/main.c
+	$(CLANG) $(CPL_FLG) ft_strcat/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strcat/ft_strcat
 
-ft_strncat: $(LIB_ROOT)/ft_strncat.c ft_strncat/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strncat.c ft_strncat/main.c \
+ft_strncat: ft_strncat/main.c
+	$(CLANG) $(CPL_FLG) ft_strncat/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strncat/ft_strncat
 
-ft_strlcat: $(LIB_ROOT)/ft_strlcat.c ft_strlcat/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strlcat.c ft_strlcat/main.c \
+ft_strlcat: ft_strlcat/main.c
+	$(CLANG) $(CPL_FLG) ft_strlcat/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strlcat/ft_strlcat
 
-ft_strchr: $(LIB_ROOT)/ft_strchr.c ft_strchr/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strchr.c ft_strchr/main.c \
+ft_strchr: ft_strchr/main.c
+	$(CLANG) $(CPL_FLG) ft_strchr/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strchr/ft_strchr
 
-ft_strrchr: $(LIB_ROOT)/ft_strrchr.c ft_strrchr/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strrchr.c ft_strrchr/main.c \
+ft_strrchr: ft_strrchr/main.c
+	$(CLANG) $(CPL_FLG) ft_strrchr/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strrchr/ft_strrchr
 
-ft_strstr: $(LIB_ROOT)/ft_strstr.c ft_strstr/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strstr.c ft_strstr/main.c \
+ft_strstr: ft_strstr/main.c
+	$(CLANG) $(CPL_FLG) ft_strstr/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strstr/ft_strstr
 
-ft_strnstr: $(LIB_ROOT)/ft_strnstr.c ft_strnstr/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strnstr.c ft_strnstr/main.c \
+ft_strnstr: ft_strnstr/main.c
+	$(CLANG) $(CPL_FLG) ft_strnstr/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strnstr/ft_strnstr
 
-ft_strcmp: $(LIB_ROOT)/ft_strcmp.c ft_strcmp/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strcmp.c ft_strcmp/main.c \
+ft_strcmp: ft_strcmp/main.c
+	$(CLANG) $(CPL_FLG) ft_strcmp/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strcmp/ft_strcmp
 
-ft_strncmp: $(LIB_ROOT)/ft_strncmp.c ft_strncmp/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strncmp.c ft_strncmp/main.c \
+ft_strncmp: ft_strncmp/main.c
+	$(CLANG) $(CPL_FLG) ft_strncmp/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strncmp/ft_strncmp
 
-ft_atoi: $(LIB_ROOT)/ft_atoi.c ft_atoi/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_atoi.c ft_atoi/main.c \
+ft_atoi: ft_atoi/main.c
+	$(CLANG) $(CPL_FLG) ft_atoi/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_atoi/ft_atoi
 
-ft_isalpha: $(LIB_ROOT)/ft_isalpha.c ft_isalpha/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_isalpha.c ft_isalpha/main.c \
+ft_isalpha: ft_isalpha/main.c
+	$(CLANG) $(CPL_FLG) ft_isalpha/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_isalpha/ft_isalpha
 
-ft_isdigit: $(LIB_ROOT)/ft_isdigit.c ft_isdigit/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_isdigit.c ft_isdigit/main.c \
+ft_isdigit: ft_isdigit/main.c
+	$(CLANG) $(CPL_FLG) ft_isdigit/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_isdigit/ft_isdigit
 
-ft_isalnum: $(LIB_ROOT)/ft_isalnum.c ft_isalnum/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_isalnum.c ft_isalnum/main.c \
+ft_isalnum: ft_isalnum/main.c
+	$(CLANG) $(CPL_FLG) ft_isalnum/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_isalnum/ft_isalnum
 
-ft_isascii: $(LIB_ROOT)/ft_isascii.c ft_isascii/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_isascii.c ft_isascii/main.c \
+ft_isascii: ft_isascii/main.c
+	$(CLANG) $(CPL_FLG) ft_isascii/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_isascii/ft_isascii
 
-ft_isprint: $(LIB_ROOT)/ft_isprint.c ft_isprint/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_isprint.c ft_isprint/main.c \
+ft_isprint: ft_isprint/main.c
+	$(CLANG) $(CPL_FLG) ft_isprint/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_isprint/ft_isprint
 
-ft_toupper: $(LIB_ROOT)/ft_toupper.c ft_toupper/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_toupper.c ft_toupper/main.c \
+ft_toupper: ft_toupper/main.c
+	$(CLANG) $(CPL_FLG) ft_toupper/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_toupper/ft_toupper
 
-ft_tolower: $(LIB_ROOT)/ft_tolower.c ft_tolower/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_tolower.c ft_tolower/main.c \
+ft_tolower: ft_tolower/main.c
+	$(CLANG) $(CPL_FLG) ft_tolower/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_tolower/ft_tolower
 
-ft_memalloc: $(LIB_ROOT)/ft_memalloc.c ft_memalloc/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_memalloc.c ft_memalloc/main.c \
+ft_memalloc: ft_memalloc/main.c
+	$(CLANG) $(CPL_FLG) ft_memalloc/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memalloc/ft_memalloc
 
-ft_memdel: $(LIB_ROOT)/ft_memdel.c ft_memdel/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_memdel.c ft_memdel/main.c \
+ft_memdel: ft_memdel/main.c
+	$(CLANG) $(CPL_FLG) ft_memdel/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memdel/ft_memdel
 
-ft_strnew: $(LIB_ROOT)/ft_strnew.c ft_strnew/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strnew.c ft_strnew/main.c \
+ft_strnew: ft_strnew/main.c
+	$(CLANG) $(CPL_FLG) ft_strnew/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strnew/ft_strnew
 
-ft_strdel: $(LIB_ROOT)/ft_strdel.c ft_strdel/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strdel.c ft_strdel/main.c \
+ft_strdel: ft_strdel/main.c
+	$(CLANG) $(CPL_FLG) ft_strdel/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strdel/ft_strdel
 
-ft_strclr: $(LIB_ROOT)/ft_strclr.c ft_strclr/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strclr.c ft_strclr/main.c \
+ft_strclr: ft_strclr/main.c
+	$(CLANG) $(CPL_FLG) ft_strclr/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strclr/ft_strclr
 
-ft_striter: $(LIB_ROOT)/ft_striter.c ft_striter/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_striter.c ft_striter/main.c \
+ft_striter: ft_striter/main.c
+	$(CLANG) $(CPL_FLG) ft_striter/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_striter/ft_striter
 
-ft_striteri: $(LIB_ROOT)/ft_striteri.c ft_striteri/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_striteri.c ft_striteri/main.c \
+ft_striteri: ft_striteri/main.c
+	$(CLANG) $(CPL_FLG) ft_striteri/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_striteri/ft_striteri
 
-ft_strmap: $(LIB_ROOT)/ft_strmap.c ft_strmap/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strmap.c ft_strmap/main.c \
+ft_strmap: ft_strmap/main.c
+	$(CLANG) $(CPL_FLG) ft_strmap/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strmap/ft_strmap
 
-ft_strmapi: $(LIB_ROOT)/ft_strmapi.c ft_strmapi/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strmapi.c ft_strmapi/main.c \
+ft_strmapi: ft_strmapi/main.c
+	$(CLANG) $(CPL_FLG) ft_strmapi/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strmapi/ft_strmapi
 
-ft_strequ: $(LIB_ROOT)/ft_strequ.c ft_strequ/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strequ.c ft_strequ/main.c \
+ft_strequ: ft_strequ/main.c
+	$(CLANG) $(CPL_FLG) ft_strequ/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strequ/ft_strequ
 
-ft_strnequ: $(LIB_ROOT)/ft_strnequ.c ft_strnequ/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strnequ.c ft_strnequ/main.c \
+ft_strnequ: ft_strnequ/main.c
+	$(CLANG) $(CPL_FLG) ft_strnequ/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strnequ/ft_strnequ
 
-ft_strsub: $(LIB_ROOT)/ft_strsub.c ft_strsub/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strsub.c ft_strsub/main.c \
+ft_strsub: ft_strsub/main.c
+	$(CLANG) $(CPL_FLG) ft_strsub/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strsub/ft_strsub
 
-ft_strjoin: $(LIB_ROOT)/ft_strjoin.c ft_strjoin/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strjoin.c ft_strjoin/main.c \
+ft_strjoin: ft_strjoin/main.c
+	$(CLANG) $(CPL_FLG) ft_strjoin/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strjoin/ft_strjoin
 
-ft_strtrim: $(LIB_ROOT)/ft_strtrim.c ft_strtrim/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strtrim.c ft_strtrim/main.c \
+ft_strtrim: ft_strtrim/main.c
+	$(CLANG) $(CPL_FLG) ft_strtrim/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strtrim/ft_strtrim
 
-ft_strsplit: $(LIB_ROOT)/ft_strsplit.c ft_strsplit/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strsplit.c ft_strsplit/main.c \
+ft_strsplit: ft_strsplit/main.c
+	$(CLANG) $(CPL_FLG) ft_strsplit/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strsplit/ft_strsplit
 
-ft_itoa: $(LIB_ROOT)/ft_itoa.c ft_itoa/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_itoa.c ft_itoa/main.c \
+ft_itoa: ft_itoa/main.c
+	$(CLANG) $(CPL_FLG) ft_itoa/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_itoa/ft_itoa
 
-ft_putchar: $(LIB_ROOT)/ft_putchar.c ft_putchar/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_putchar.c ft_putchar/main.c \
+ft_putchar: ft_putchar/main.c
+	$(CLANG) $(CPL_FLG) ft_putchar/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putchar/ft_putchar
 
-ft_putstr: $(LIB_ROOT)/ft_putstr.c ft_putstr/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_putstr.c ft_putstr/main.c \
+ft_putstr: ft_putstr/main.c
+	$(CLANG) $(CPL_FLG) ft_putstr/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putstr/ft_putstr
 
-ft_putendl: $(LIB_ROOT)/ft_putendl.c ft_putendl/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_putendl.c ft_putendl/main.c \
+ft_putendl: ft_putendl/main.c
+	$(CLANG) $(CPL_FLG) ft_putendl/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putendl/ft_putendl
 
-ft_putnbr: $(LIB_ROOT)/ft_putnbr.c ft_putnbr/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_putnbr.c ft_putnbr/main.c \
+ft_putnbr: ft_putnbr/main.c
+	$(CLANG) $(CPL_FLG) ft_putnbr/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putnbr/ft_putnbr
 
-ft_putchar_fd: $(LIB_ROOT)/ft_putchar_fd.c ft_putchar_fd/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_putchar_fd.c ft_putchar_fd/main.c \
+ft_putchar_fd: ft_putchar_fd/main.c
+	$(CLANG) $(CPL_FLG) ft_putchar_fd/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putchar_fd/ft_putchar_fd
 
-ft_putstr_fd: $(LIB_ROOT)/ft_putstr_fd.c ft_putstr_fd/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_putstr_fd.c ft_putstr_fd/main.c \
+ft_putstr_fd: ft_putstr_fd/main.c
+	$(CLANG) $(CPL_FLG) ft_putstr_fd/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putstr_fd/ft_putstr_fd
 
-ft_putendl_fd: $(LIB_ROOT)/ft_putendl_fd.c ft_putendl_fd/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_putendl_fd.c ft_putendl_fd/main.c \
+ft_putendl_fd: ft_putendl_fd/main.c
+	$(CLANG) $(CPL_FLG) ft_putendl_fd/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putendl_fd/ft_putendl_fd
 
-ft_putnbr_fd: $(LIB_ROOT)/ft_putnbr_fd.c ft_putnbr_fd/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_putnbr_fd.c ft_putnbr_fd/main.c \
+ft_putnbr_fd: ft_putnbr_fd/main.c
+	$(CLANG) $(CPL_FLG) ft_putnbr_fd/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putnbr_fd/ft_putnbr_fd
 
-ft_lstnew: $(LIB_ROOT)/ft_lstnew.c ft_lstnew/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_lstnew.c ft_lstnew/main.c \
+ft_lstnew: ft_lstnew/main.c
+	$(CLANG) $(CPL_FLG) ft_lstnew/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_lstnew/ft_lstnew
 
-ft_lstdelone: $(LIB_ROOT)/ft_lstdelone.c ft_lstdelone/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_lstdelone.c ft_lstdelone/main.c \
+ft_lstdelone: ft_lstdelone/main.c
+	$(CLANG) $(CPL_FLG) ft_lstdelone/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_lstdelone/ft_lstdelone
 
-ft_lstdel: $(LIB_ROOT)/ft_lstdel.c ft_lstdel/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_lstdel.c ft_lstdel/main.c \
+ft_lstdel: ft_lstdel/main.c
+	$(CLANG) $(CPL_FLG) ft_lstdel/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_lstdel/ft_lstdel
 
-ft_lstadd: $(LIB_ROOT)/ft_lstadd.c ft_lstadd/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_lstadd.c ft_lstadd/main.c \
+ft_lstadd: ft_lstadd/main.c
+	$(CLANG) $(CPL_FLG) ft_lstadd/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_lstadd/ft_lstadd
 
-ft_lstiter: $(LIB_ROOT)/ft_lstiter.c ft_lstiter/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_lstiter.c ft_lstiter/main.c \
+ft_lstiter: ft_lstiter/main.c
+	$(CLANG) $(CPL_FLG) ft_lstiter/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_lstiter/ft_lstiter
 
-ft_lstmap: $(LIB_ROOT)/ft_lstmap.c ft_lstmap/main.c
-	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_lstmap.c ft_lstmap/main.c \
+ft_lstmap: ft_lstmap/main.c
+	$(CLANG) $(CPL_FLG) ft_lstmap/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_lstmap/ft_lstmap
