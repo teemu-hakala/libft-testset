@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 11:47:00 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/11 19:29:10 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/11 19:52:04 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,6 +118,7 @@ static int	ft_segfault_dst(char *dst, void *src, size_t len, size_t n)
 	if (!jmp_result)
 	{
 		memcpy(std_dst, src, len);
+		printf(" libc: no segmentation fault\n");
 		g_std_segfault = 0;
 	}
 	jmp_result = setjmp(g_buffer);
@@ -125,6 +126,7 @@ static int	ft_segfault_dst(char *dst, void *src, size_t len, size_t n)
 	if (!jmp_result)
 	{
 		ft_memcpy(ft_dst, src, len);
+		printf("libft: no segmentation fault\n");
 		truth = !g_std_segfault;
 		g_std_segfault = 0;
 	}
@@ -161,13 +163,16 @@ int	main(void)
 		return (1);
 	}
 	id = 0;
-	ft_segfault(NULL, NULL, 10, id++);
-	ft_segfault(NULL, "src", 0, id++);
-	ft_segfault(NULL, "src", 3, id++);
-	ft_segfault_dst("dst", NULL, 0, id++);
-	ft_segfault_dst("dst", NULL, 3, id++);
-	ft_segfault(NULL, NULL, 10, id++);
-	ft_segfault(NULL, NULL, 10, id++);
-	ft_segfault(NULL, NULL, 10, id++);
+	printf("truth: %d\n", ft_segfault(NULL, NULL, 0, id++));
+	printf("truth: %d\n", ft_segfault(NULL, NULL, 10, id++));
+	printf("truth: %d\n", ft_segfault(NULL, "src", 0, id++));
+	printf("truth: %d\n", ft_segfault(NULL, "src", 3, id++));
+	printf("truth: %d\n", ft_segfault_dst("dst", NULL, 0, id++));
+	printf("truth: %d\n", ft_segfault_dst("dst", NULL, 3, id++));
+	printf("truth: %d\n", ft_segfault(NULL, "src", (size_t)-1, id++));
+	//printf("truth: %d\n", ft_segfault_same("dst", 3, id++));
+	printf("truth: %d\n", ft_segfault(NULL, NULL, 10, id++));
+	printf("truth: %d\n", ft_segfault(NULL, NULL, 10, id++));
+	printf("truth: %d\n", ft_segfault(NULL, NULL, 10, id++));
 	printf("OK: ft_memcpy");
 }
