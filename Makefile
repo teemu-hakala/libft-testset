@@ -6,7 +6,7 @@
 #    By: thakala <thakala@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/04 19:05:04 by thakala           #+#    #+#              #
-#    Updated: 2021/11/11 10:10:54 by thakala          ###   ########.fr        #
+#    Updated: 2021/11/11 10:13:53 by thakala          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -93,7 +93,7 @@ LIB_ROOT = ../$(LIB_NAME)
 
 PRG_DIR = _programs
 
-.PHONY: $(FUNCTIONS)
+.PHONY: $(FUNCTIONS) all subsystem norminette evaldirectories foreach
 
 all: subsystem \
 	norminette \
