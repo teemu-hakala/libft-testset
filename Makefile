@@ -6,7 +6,7 @@
 #    By: thakala <thakala@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/04 19:05:04 by thakala           #+#    #+#              #
-#    Updated: 2021/11/11 10:13:53 by thakala          ###   ########.fr        #
+#    Updated: 2021/11/11 17:12:50 by thakala          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -114,6 +114,11 @@ evaldirectories:
 foreach:
 	$(foreach ft, $(FUNCTIONS), \
 	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/$(ft).c $(ft)/main.c \
+		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/$(ft)/$(ft);)
+
+foreach2:
+	$(foreach ft, $(FUNCTIONS), \
+	$(CLANG) $(CPL_FLG) $(ft)/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/$(ft)/$(ft);)
 
 ft_memset: $(LIB_ROOT)/ft_memset.c ft_memset/main.c
