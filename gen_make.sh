@@ -63,8 +63,7 @@ for v in $s; do
 	#echo "$v/main.c"
 	echo "$v: \$(SRC_DIR)/$v.c $v/main.c"
 	echo "	\$(CLANG) \$(CPL_FLG) \$(SRC_DIR)/$v.c $v/main.c \\"
-	echo "		-L\$(LIB_DIR) -ltest -L\$(LIB_ROOT) -lft \\"
-	echo "		-o \$(PRG_DIR)/$v/$v"
+	echo "		-L\$(LIB_ROOT) -lft -o \$(PRG_DIR)/$v/$v"
 	echo ""
 done
 
