@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 04:48:33 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/10 12:30:39 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/12 08:58:40 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,10 +44,11 @@ void	ft_test_str(char *std_s, size_t len)
 	else
 		printf("KO: ft_bzero string\n");
 	free(ft_s);
+	free(std_s);
 }
 
 int	main(void)
 {
-	ft_test_int_array((int []){1, 2, 3, 4, 5, 6, 7, 8}, 8);
+	ft_test_int_array((int []){1, 2, 3, 4, 5, 6, 7, 8}, sizeof(int) * 8);
 	ft_test_str(strdup("Ten chars"), 10);
 }
