@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 13:49:17 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/10 14:34:26 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/12 12:57:57 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ int	main(void)
 		|| !ft_test("Test string.", '.')
 		|| !ft_test("Test string.", '\0'))
 	{
-		printf("KO: ft_memchr");
+		printf("KO: ft_memchr\n");
 		return (1);
 	}
-	printf("OK: ft_memchr");
+	printf("OK: ft_memchr\n");
 	return (0);
 }

@@ -6,12 +6,11 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 11:19:28 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/10 11:51:44 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/12 12:49:11 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_tests.h"
-#include "../_test_ft/includes/test_ft.h"
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>

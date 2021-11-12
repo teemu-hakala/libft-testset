@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 17:42:24 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/10 17:42:41 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/12 13:03:48 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,10 @@ int	main(void)
 	{
 		if (!ft_test(i))
 		{
-			printf("KO: ft_toupper\n");
+			printf("KO: ft_tolower\n");
 			return (1);
 		}
 		i++;
 	}
-	printf("OK: ft_toupper\n");
+	printf("OK: ft_tolower\n");
 }

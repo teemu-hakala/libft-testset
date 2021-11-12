@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 14:39:48 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/10 14:38:41 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/12 12:59:50 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static int	ft_test(char *s1, const char *s2)
 	ft_catted_str = (char *)malloc(sizeof(char) * catted_len);
 	if (!std_catted_str || !ft_catted_str)
 	{
-		printf("Memory allocation error!");
+		printf("Memory allocation error!\n");
 		return (1);
 	}
 	strcpy(std_catted_str, s1);
@@ -40,8 +40,8 @@ int	main(void)
 		|| ft_test("", "")
 		|| ft_test("\0", "\1"))
 	{
-		printf("KO: ft_strcat");
+		printf("KO: ft_strcat\n");
 		return (1);
 	}
-	printf("OK: ft_strcat");
+	printf("OK: ft_strcat\n");
 }

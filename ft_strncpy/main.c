@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 14:27:12 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/10 14:38:04 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/12 12:59:32 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static int	ft_test(const char *src, size_t n)
 	ft_str = (char *)malloc(sizeof(char) * n);
 	if (!std_str || !ft_str)
 	{
-		printf("Memory allocation error!");
+		printf("Memory allocation error!\n");
 		return (1);
 	}
 	std_str = strncpy(std_str, src, n);
@@ -41,9 +41,8 @@ int	main(void)
 		|| ft_test("man malloc", 20)
 		|| ft_test("", 1))
 	{
-		printf("KO: ft_strncpy");
+		printf("KO: ft_strncpy\n");
 		return (1);
 	}
-	ft_strncpy(NULL, NULL, 10);
-	printf("OK: ft_strncpy");
+	printf("OK: ft_strncpy\n");
 }

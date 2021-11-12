@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 18:06:17 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/10 14:43:12 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/12 13:01:23 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ int	main(void)
 	if (!ft_test("Unbreakable", 'U')
 		|| !ft_test("Unbreakable", '\0'))
 	{
-		printf("KO: ft_strrchr");
+		printf("KO: ft_strrchr\n");
 		return (1);
 	}
-	printf("OK: ft_strrchr");
+	printf("OK: ft_strrchr\n");
 }
