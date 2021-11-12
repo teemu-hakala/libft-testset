@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 14:39:27 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/12 11:30:12 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/12 15:15:48 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ static int	ft_test(const char *dst_init, const char *src, size_t l)
 
 	len = strlen(dst_init) + l;
 	std_dst = (char *)malloc(sizeof(char) * len);
+	memset(std_dst, 1, len);
 	strcpy(std_dst, dst_init);
 	ft_dst = (char *)malloc(sizeof(char) * len);
 	ft_dst = (char *)memcpy(ft_dst, std_dst, len);
