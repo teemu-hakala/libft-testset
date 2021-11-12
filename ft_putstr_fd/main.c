@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 17:18:38 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/03 10:14:40 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/12 11:10:19 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@
 int	ft_test(char *str, int fd)
 {
 	char	*str_;
-	int		size;
+	size_t	size;
 
 	ft_putstr_fd(str, fd);
 	size = ft_strlen_test(str);
-	str_ = (char *)malloc(sizeof(*str_) * (size + 1));
+	str_ = (char *)malloc(sizeof(*str_) * (size + (size_t)1));
 	lseek(fd, 0, SEEK_SET);
 	if (read(fd, &str_, size) == -1)
 	{
