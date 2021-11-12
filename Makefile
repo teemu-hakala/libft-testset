@@ -6,7 +6,7 @@
 #    By: thakala <thakala@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/04 19:05:04 by thakala           #+#    #+#              #
-#    Updated: 2021/11/12 12:35:45 by thakala          ###   ########.fr        #
+#    Updated: 2021/11/12 12:45:57 by thakala          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -110,6 +110,7 @@ all: subsystem \
 	$(FUNCTIONS)
 
 debug: subsystem \
+	norminette \
 	evaldirectories \
 	$(FUNCTIONS_DEBUG)
 
