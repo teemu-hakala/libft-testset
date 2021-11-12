@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 11:47:00 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/11 19:52:04 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/12 12:25:47 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 
 jmp_buf	g_buffer;
 int		g_std_segfault;
+char	*g_message;
 
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 
@@ -89,6 +90,7 @@ static int	ft_segfault(void *dst, void *src, size_t len, size_t n)
 	printf("jump%zu: %d\n", n, jmp_result);
 	if (!jmp_result)
 	{
+		strcpy(g_message, " libc");
 		memcpy(dst, src, len);
 		g_std_segfault = 0;
 	}
@@ -96,6 +98,7 @@ static int	ft_segfault(void *dst, void *src, size_t len, size_t n)
 	printf("jump%zu: %d\n", n, jmp_result);
 	if (!jmp_result)
 	{
+		strcpy(g_message, "libft");
 		ft_memcpy(dst, src, len);
 		truth = !g_std_segfault;
 		g_std_segfault = 0;
@@ -117,6 +120,7 @@ static int	ft_segfault_dst(char *dst, void *src, size_t len, size_t n)
 	printf("jump_std%zu: %d\n", n, jmp_result);
 	if (!jmp_result)
 	{
+		strcpy(g_message, " libc");
 		memcpy(std_dst, src, len);
 		printf(" libc: no segmentation fault\n");
 		g_std_segfault = 0;
@@ -125,6 +129,7 @@ static int	ft_segfault_dst(char *dst, void *src, size_t len, size_t n)
 	printf("jump__ft%zu: %d\n", n, jmp_result);
 	if (!jmp_result)
 	{
+		strcpy(g_message, "libft");
 		ft_memcpy(ft_dst, src, len);
 		printf("libft: no segmentation fault\n");
 		truth = !g_std_segfault;
@@ -135,11 +140,44 @@ static int	ft_segfault_dst(char *dst, void *src, size_t len, size_t n)
 	return (truth);
 }
 
+static int	ft_segfault_same(char *dstsrc, size_t len, size_t n)
+{
+	int		jmp_result;
+	char	*destinationsource;
+	int		truth;
+
+	destinationsource = (char *)malloc(sizeof(char) * len);
+	strcpy(destinationsource, dstsrc);
+	jmp_result = setjmp(g_buffer);
+	truth = 1;
+	printf("jump_std%zu: %d\n", n, jmp_result);
+	if (!jmp_result)
+	{
+		strcpy(g_message, " libc");
+		memcpy(destinationsource, destinationsource, len);
+		printf(" libc: no segmentation fault\n");
+		g_std_segfault = 0;
+	}
+	jmp_result = setjmp(g_buffer);
+	printf("jump__ft%zu: %d\n", n, jmp_result);
+	if (!jmp_result)
+	{
+		strcpy(g_message, "libft");
+		ft_memcpy(destinationsource, destinationsource, len);
+		printf("libft: no segmentation fault\n");
+		truth = !g_std_segfault;
+		g_std_segfault = 0;
+	}
+	free(destinationsource);
+	return (truth);
+}
+
 static void	segfault_sigaction(int signal, siginfo_t *si, void *arg)
 {
 	(void)signal;
 	(void)arg;
 	printf("Caught segfault at address %p\n", si->si_addr);
+	printf("SIGSEGV: %s\n", g_message);
 	g_std_segfault = 1;
 	//g_test = !g_test;
 	longjmp(g_buffer, 10000);
@@ -156,6 +194,7 @@ int	main(void)
 	sa.sa_flags = SA_SIGINFO;
 	sigaction(SIGSEGV, &sa, NULL);
 	g_std_segfault = 0;
+	g_message = strdup(" libc");
 	if (ft_test("abcdefBghijklmnopq")
 		|| ft_test("abcde\x1\fBghi\0jklmnopq"))
 	{
@@ -170,9 +209,10 @@ int	main(void)
 	printf("truth: %d\n", ft_segfault_dst("dst", NULL, 0, id++));
 	printf("truth: %d\n", ft_segfault_dst("dst", NULL, 3, id++));
 	printf("truth: %d\n", ft_segfault(NULL, "src", (size_t)-1, id++));
-	//printf("truth: %d\n", ft_segfault_same("dst", 3, id++));
+	printf("truth: %d\n", ft_segfault_same("dst", 3, id++));
 	printf("truth: %d\n", ft_segfault(NULL, NULL, 10, id++));
 	printf("truth: %d\n", ft_segfault(NULL, NULL, 10, id++));
 	printf("truth: %d\n", ft_segfault(NULL, NULL, 10, id++));
 	printf("OK: ft_memcpy");
+	free(g_message);
 }
