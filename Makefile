@@ -6,7 +6,7 @@
 #    By: thakala <thakala@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/04 19:05:04 by thakala           #+#    #+#              #
-#    Updated: 2021/11/12 11:46:40 by thakala          ###   ########.fr        #
+#    Updated: 2021/11/12 12:35:45 by thakala          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,9 @@ FUNCTIONS = \
 	ft_isascii\
 	ft_isprint \
 	ft_toupper \
-	ft_tolower \
+	ft_tolower
+
+FUNCTIONS2 = \
 	ft_memalloc \
 	ft_memdel \
 	ft_strnew \
@@ -108,6 +110,7 @@ all: subsystem \
 	$(FUNCTIONS)
 
 debug: subsystem \
+	evaldirectories \
 	$(FUNCTIONS_DEBUG)
 
 #Compile libft.a
