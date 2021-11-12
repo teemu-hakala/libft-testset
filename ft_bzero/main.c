@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 04:48:33 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/12 10:43:20 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/12 10:45:00 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ft_test_int_array(int *std_array, size_t len)
 	memcpy(ft_array, std_array, len);
 	ft_bzero(ft_array, len);
 	bzero(std_array, len);
-	if (!ft_memcmp(ft_array, std_array, len))
+	if (!memcmp(ft_array, std_array, len))
 		printf("OK: ft_bzero int array\n");
 	else
 		printf("KO: ft_bzero int array\n");
@@ -39,7 +39,7 @@ void	ft_test_str(char *std_s, size_t len)
 	strncpy(ft_s, std_s, len);
 	ft_bzero(ft_s, len);
 	bzero(std_s, len);
-	if (!ft_memcmp(ft_s, std_s, len))
+	if (!memcmp(ft_s, std_s, len))
 		printf("OK: ft_bzero string\n");
 	else
 		printf("KO: ft_bzero string\n");
