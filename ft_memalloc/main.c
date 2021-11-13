@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 07:37:22 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/10 17:01:56 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/13 18:43:19 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ int	main(void)
 		if (area[i++])
 		{
 			printf("KO: ft_memalloc\n");
+			free(area);
 			return (1);
 		}
 	}
