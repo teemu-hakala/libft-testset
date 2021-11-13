@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 04:48:33 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/13 18:11:16 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/13 18:33:13 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -125,6 +125,7 @@ int	main(void)
 		|| ft_segfault(NULL, (size_t)1, id++))
 	{
 		printf("KO: ft_bzero: SIGSEGV diff %zu\n", id);
+		return (1);
 	}
 	printf("OK: ft_bzero\n");
 	free(g_message);
