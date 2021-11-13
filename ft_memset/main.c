@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 11:19:28 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/13 18:33:04 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/13 18:40:46 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,10 +113,10 @@ int	main(void)
 		printf("KO: ft_memset\n");
 		return (1);
 	}
-	else if (ft_segfault(NULL, 0, 0, id++)
-		|| ft_segfault(NULL, 0, 1, id++)
-		|| ft_segfault(NULL, -1, 0, id++)
-		|| ft_segfault(NULL, -1, 1, id++))
+	else if (!ft_segfault(NULL, 0, 0, id++)
+		|| !ft_segfault(NULL, 0, 1, id++)
+		|| !ft_segfault(NULL, -1, 0, id++)
+		|| !ft_segfault(NULL, -1, 1, id++))
 	{
 		printf("KO: ft_memset: SIGSEGV diff %zu\n", id);
 		return (1);
