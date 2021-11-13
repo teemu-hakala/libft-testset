@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 04:48:33 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/13 18:33:13 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/13 18:57:35 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,27 +102,33 @@ static void	segfault_sigaction(int signal, siginfo_t *si, void *arg)
 	longjmp(g_buffer, 19);
 }
 
+static void	ft_initialize_segv_test(struct sigaction *sa)
+{
+	memset(sa, 0, sizeof(struct sigaction));
+	sigemptyset(&sa->sa_mask);
+	sa->sa_sigaction = segfault_sigaction;
+	sa->sa_flags = SA_SIGINFO;
+	sigaction(SIGSEGV, sa, NULL);
+	g_std_segfault = 0;
+	g_print = 0;
+	g_message = strdup(_LIBC_MSG);
+}
+
 int	main(void)
 {
 	struct sigaction	sa;
 	size_t				id;
 
-	memset(&sa, 0, sizeof(struct sigaction));
-	sigemptyset(&sa.sa_mask);
-	sa.sa_sigaction = segfault_sigaction;
-	sa.sa_flags = SA_SIGINFO;
-	sigaction(SIGSEGV, &sa, NULL);
 	id = 0;
-	g_print = 0;
-	g_message = strdup(_LIBC_MSG);
+	ft_initialize_segv_test(&sa);
 	if (ft_test_int_array((int []){1, 2, 3, 4, 5, 6, 7, 8}, sizeof(int) * 8)
 		|| ft_test_str(strdup("Ten chars"), 10))
 	{
 		printf("KO: ft_bzero\n");
 		return (1);
 	}
-	else if (ft_segfault(NULL, (size_t)0, id++)
-		|| ft_segfault(NULL, (size_t)1, id++))
+	else if (!ft_segfault(NULL, (size_t)0, id++)
+		|| !ft_segfault(NULL, (size_t)1, id++))
 	{
 		printf("KO: ft_bzero: SIGSEGV diff %zu\n", id);
 		return (1);
