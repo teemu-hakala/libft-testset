@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 11:19:28 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/13 18:40:46 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/13 18:52:48 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 #include <stdio.h>
 #include <signal.h>
 #include <setjmp.h>
+#define _LIBC_MSG " libc"
+#define LIBFT_MSG "libft"
 
 jmp_buf	g_buffer;
 int		g_std_segfault;
@@ -59,7 +61,7 @@ static int	ft_segfault(void *area, int byte, size_t len, size_t dbg)
 		printf("jump%zu: %d\n", dbg, jmp_result);
 	if (!jmp_result)
 	{
-		strcpy(g_message, " libc");
+		strcpy(g_message, _LIBC_MSG);
 		memset(area, byte, len);
 		g_std_segfault = 0;
 	}
@@ -68,7 +70,7 @@ static int	ft_segfault(void *area, int byte, size_t len, size_t dbg)
 		printf("jump%zu: %d\n", dbg, jmp_result);
 	if (!jmp_result)
 	{
-		strcpy(g_message, "libft");
+		strcpy(g_message, LIBFT_MSG);
 		ft_memset(area, byte, len);
 		truth = !g_std_segfault;
 		g_std_segfault = 0;
@@ -96,7 +98,7 @@ static void	ft_initialize_segv_test(struct sigaction *sa)
 	sigaction(SIGSEGV, sa, NULL);
 	g_std_segfault = 0;
 	g_print = 0;
-	g_message = strdup(" libc");
+	g_message = strdup(_LIBC_MSG);
 }
 
 int	main(void)
