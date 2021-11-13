@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 12:23:09 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/10 17:58:56 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/13 18:44:44 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,10 @@ static int	ft_test(char *s)
 int	main(void)
 {
 	if (ft_test("Test string."))
+	{
 		printf("OK: ft_memdel\n");
-	else
-		printf("KO: ft_memdel\n");
+		return (1);
+	}
+	printf("KO: ft_memdel\n");
+	return (0);
 }
