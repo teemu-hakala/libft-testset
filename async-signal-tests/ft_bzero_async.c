@@ -6,22 +6,16 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 16:00:18 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/14 16:18:13 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/14 16:45:57 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_tests.h"
+#include "ft_segfaults.h"
 #include <stdio.h>
 #include <string.h>
 #include <setjmp.h>
 #include <stdlib.h>
-#define _LIBC_MSG " libc"
-#define LIBFT_MSG "libft"
-
-char	*g_message;
-int		g_std_segfault;
-jmp_buf	g_buffer;
-int		g_print;
 
 static int	ft_segfault(void *ptr, size_t count, size_t dbg)
 {
@@ -31,7 +25,7 @@ static int	ft_segfault(void *ptr, size_t count, size_t dbg)
 	jmp_result = setjmp(g_buffer);
 	truth = 1;
 	if (g_print)
-		printf("   bzero: jump%zu: %d\n", dbg, jmp_result);
+		printf("   bzero: test%zu: %d\n", dbg, jmp_result);
 	if (!jmp_result)
 	{
 		strcpy(g_message, _LIBC_MSG);
@@ -40,7 +34,7 @@ static int	ft_segfault(void *ptr, size_t count, size_t dbg)
 	}
 	jmp_result = setjmp(g_buffer);
 	if (g_print)
-		printf("ft_bzero: jump%zu: %d\n", dbg, jmp_result);
+		printf("ft_bzero: test%zu: %d\n", dbg, jmp_result);
 	if (!jmp_result)
 	{
 		strcpy(g_message, LIBFT_MSG);
