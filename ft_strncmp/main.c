@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 16:38:47 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/10 16:54:42 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/14 20:26:48 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,10 @@ static int	ft_test(const char *s1, const char *s2, size_t len)
 
 int	main(void)
 {
-	if (!ft_test("test", "test", 0)
+	if (!ft_test("", "", 0)
 		|| !ft_test("", "", 1)
+		|| !ft_test("test", "test", 0)
+		|| !ft_test("aest", "fest", 0)
 		|| !ft_test("best", "zest", 10)
 		|| !ft_test("ok", "oko", 2)
 		|| !ft_test("abc", "abe", 5)
