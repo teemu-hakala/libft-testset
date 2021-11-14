@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 19:05:12 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/14 16:40:27 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/14 16:47:43 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ int	main(void)
 	ft_initialize_abrt_test(&sa_abrt);
 	if (ft_segfault_memset()
 		|| ft_segfault_bzero()
-		|| !ft_sigabrt_memdel())
+		|| ft_sigabrt_memdel())
 	{
 		printf("KO: SEGV diff\n");
 		free(g_message);
