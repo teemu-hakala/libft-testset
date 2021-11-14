@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 07:37:22 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/13 18:43:19 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/14 16:20:27 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	main(void)
 	size_t	i;
 	char	*area;
 
-	size = 10000000;
+	size = 10000001;
 	i = 0;
 	area = (char *)ft_memalloc(size);
 	while (i < size)
