@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 17:37:16 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/14 17:46:17 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/14 18:27:03 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ static int	ft_test(const char *s, const char *reference)
 		exit(42);
 	}
 	ft_striteri(str, &ft_alternate_case);
-	printf("%s\n", str);
 	result = strcmp(str, reference);
 	free(str);
 	return (result);
