@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 17:37:16 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/14 18:27:03 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/14 18:32:46 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static int	ft_test(const char *s, const char *reference)
 int	main(void)
 {
 	if (ft_test("", "")
-		|| ft_test("evenswitchcase", "EvEnSwItChCaSe")
+		|| ft_test("alternate_case", "AlTeRnAtE_CaSe")
 		|| ft_test("OK: ft_striteri", "Ok: Ft_sTrItErI")
 		|| ft_test("qwertyuiopasdfghjklzxcvbnm", "QwErTyUiOpAsDfGhJkLzXcVbNm")
 		|| ft_test("QWERTYUIOPASDFGHJKLZXCVBNM", "QwErTyUiOpAsDfGhJkLzXcVbNm"))
