@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 11:47:00 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/12 12:25:47 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/13 19:16:28 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -180,7 +180,7 @@ static void	segfault_sigaction(int signal, siginfo_t *si, void *arg)
 	printf("SIGSEGV: %s\n", g_message);
 	g_std_segfault = 1;
 	//g_test = !g_test;
-	longjmp(g_buffer, 10000);
+	longjmp(g_buffer, 19);
 }
 
 int	main(void)
