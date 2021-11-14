@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 16:24:18 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/14 16:46:53 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/14 17:07:06 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,11 @@ static int	ft_sigabrt(const char *s, size_t dbg)
 	truth = 1;
 	strcpy(g_message, LIBFT_MSG);
 	string = strdup(s);
+	if (!string)
+	{
+		printf("Memory allocation error.\n");
+		exit(42);
+	}
 	length = strlen(string);
 	string_copy = string;
 	ft_memdel((void **)&string);

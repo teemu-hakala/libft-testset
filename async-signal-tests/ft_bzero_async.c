@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 16:00:18 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/14 16:45:57 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/14 17:08:29 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,14 +51,24 @@ int	ft_segfault_bzero(void)
 {
 	size_t	id;
 	int		result;
+	char	*str3;
+	char	*str4;
+	char	*str5;
 
 	id = 0;
+	str3 = strdup("Memory issues 0.\n");
+	str4 = strdup("Memory issues 1.\n");
+	str5 = strdup("Memory issues 21.\n");
+	if (!str3 || !str4 || !str5)
+	{
+		printf("Memory allocation error.\n");
+		exit(42);
+	}
 	result = !ft_segfault(NULL, 0, id++)
 		|| !ft_segfault(NULL, 1, id++)
 		|| !ft_segfault(NULL, 211, id++)
-		|| !ft_segfault(strdup("Memory issues 0.\n"), 0, id++)
-		|| !ft_segfault(strdup("Memory issues 1.\n"), 1, id++)
-		|| !ft_segfault(strdup("Memory issues 2.\n"), 211, id++);
-		//|| !ft_segfault(strdup("Memory issues 3.\n"), 10000000, id++);
+		|| !ft_segfault(str3, 0, id++)
+		|| !ft_segfault(str4, 1, id++)
+		|| !ft_segfault(str5, 19, id++);
 	return (result);
 }
