@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 12:23:09 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/13 19:00:45 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/14 16:24:04 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ static int	ft_test(char *s)
 	ft_memdel((void **)&string);
 	if (0)
 		ft_putstr_len(string_copy, length);
-	free(string_copy); // define handler for SIGABRT
 	if (!string)
 		return (1);
 	return (0);
