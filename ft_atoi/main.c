@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
+/*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:58:29 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/10 17:25:57 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/18 10:54:44 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,25 +29,28 @@ int	ft_test(char *n)
 int	main(void)
 {
 	if (!ft_test("0")
-		&& !ft_test("-0")
-		&& !ft_test("+0")
-		&& !ft_test("-")
-		&& !ft_test("+")
-		&& !ft_test("a")
-		&& !ft_test("+a")
-		&& !ft_test("-b")
-		&& !ft_test("7")
-		&& !ft_test("+7a3")
-		&& !ft_test("-6O4")
-		&& !ft_test("++10")
-		&& !ft_test("--10")
-		&& !ft_test("2147483647")
-		&& !ft_test("-2147483648")
-		&& !ft_test("1000000000000")
-		&& !ft_test("-1000000000000"))
+		|| !ft_test("-0")
+		|| !ft_test("+0")
+		|| !ft_test("-")
+		|| !ft_test("+")
+		|| !ft_test("a")
+		|| !ft_test("+a")
+		|| !ft_test("-b")
+		|| !ft_test("7")
+		|| !ft_test("+7a3")
+		|| !ft_test("-6O40")
+		|| !ft_test("++10")
+		|| !ft_test("--10")
+		|| !ft_test("2147483647")
+		|| !ft_test("-2147483648")
+		|| !ft_test("1000000000000")
+		|| !ft_test("-1000000000000"))
 	{
 		printf("KO: ft_atoi");
 		return (1);
 	}
 	printf("OK: ft_atoi");
+	if (!ft_test("9999999999999999999999999999999998"))
+		printf("No long max protection\n");
+	return (0);
 }
