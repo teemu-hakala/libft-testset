@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 22:37:08 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/17 23:04:00 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/18 10:07:00 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ static int	ft_test(const char *input, const char *reference)
 		printf("Memory allocation error.\n");
 		exit(42);
 	}
-	printf("%s\n%s\n\n", reference, trimmed_str);
 	result = strcmp(reference, trimmed_str);
 	free(trimmed_str);
 	return (result);
