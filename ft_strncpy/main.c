@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
+/*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 14:27:12 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/12 12:59:32 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/18 17:30:48 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ static int	ft_test(const char *src, size_t n)
 	char	*ft_str;
 	int		result;
 
-	std_str = (char *)malloc(sizeof(char) * n);
-	ft_str = (char *)malloc(sizeof(char) * n);
+	std_str = (char *)calloc(n, sizeof(char));
+	ft_str = (char *)calloc(n, sizeof(char));
 	if (!std_str || !ft_str)
 	{
 		printf("Memory allocation error!\n");
