@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 12:09:08 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/19 14:51:18 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/19 16:02:56 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ static int	ft_test(const char *str, const char chr, char **ref,
 
 	splits = ft_strsplit(str, chr);
 	i = 0;
-	while (i < count)
+	while (splits[i] && ref[i])
 	{
 		if (strcmp(splits[i], ref[i]))
 		{
@@ -41,21 +41,24 @@ static int	ft_test(const char *str, const char chr, char **ref,
 		}
 		i++;
 	}
-	if (splits[i] != ref[i])
+	if (splits[i] && splits[i] != ref[i])
 	{
 		free_all(splits, count);
 		return (1);
 	}
-	free_all(splits, count);
+	else if (splits[i])
+		free_all(splits, count);
+	else
+		free(splits);
 	return (0);
 }
 
 int	main(void)
 {
 	if (ft_test("", '*',
-			(char *[]){"", NULL}, 1)
+			(char *[]){NULL}, 0)
 		|| ft_test("******", '*',
-			(char *[]){"", NULL}, 1)
+			(char *[]){NULL}, 0)
 		|| ft_test("***a***", '*',
 			(char *[]){"a", NULL}, 1)
 		|| ft_test("*hello*fellow***students*", '*',
