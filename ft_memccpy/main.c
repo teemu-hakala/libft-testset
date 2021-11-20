@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
+/*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 07:59:44 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/12 12:56:30 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/20 13:53:52 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#define TRAIL 3
 
 static void	*memdup(const void *mem, size_t size)
 {
@@ -53,31 +54,36 @@ static int	ft_display_cmp(char *std_res, char *ft_res, size_t remaining)
 	return (memcmp(std_res, ft_res, remaining));
 }
 
-static int	ft_compare(char *src, char c, char *std_dst, char *ft_dst)
+static int	ft_compare(char *src, char c, char *std_dst, char *ft_dst,
+	size_t len)
 {
-	size_t	len;
 	char	*std_res;
 	char	*ft_res;
 
-	len = strlen(src);
 	std_res = (char *)memccpy(std_dst, src, c, len);
 	ft_res = (char *)ft_memccpy(ft_dst, src, c, len);
 	if (!std_res && !ft_res)
 		return (0);
-	return (ft_display_cmp(std_res, ft_res, len - ft_occurence_len(src, c)));
+	return (ft_display_cmp(std_res, ft_res,
+			strlen(src) - ft_occurence_len(src, c) + TRAIL));
 }
 
-static int	ft_test(char *str, char c)
+static int	ft_test(char *str, char c, size_t len)
 {
 	char	*std_dst;
 	char	*ft_dst;
 	size_t	length;
 	int		result;
 
-	length = strlen(str);
-	std_dst = (char *)malloc(sizeof(char) * length);
-	ft_dst = (char *)memdup(std_dst, length);
-	result = ft_compare(str, c, std_dst, ft_dst);
+	if (len == (size_t)(-1))
+		length = strlen(str);
+	else
+		length = len;
+	std_dst = (char *)malloc(sizeof(char) * (length + TRAIL + 1));
+	memset(std_dst, 'o', length + TRAIL);
+	std_dst[length + TRAIL] = '\0';
+	ft_dst = (char *)memdup(std_dst, length + TRAIL + 1);
+	result = ft_compare(str, c, std_dst, ft_dst, length);
 	free(std_dst);
 	free(ft_dst);
 	return (result);
@@ -85,8 +91,9 @@ static int	ft_test(char *str, char c)
 
 int	main(void)
 {
-	if (ft_test("abcdefBghijklmnopq", 'B')
-		|| ft_test("abcdefBghijk\0lmnopq", 'C'))
+	if (ft_test("abcdefBghijklmnopq", 'B', (size_t)(-1))
+		|| ft_test("abcdefBghijk", 'C', (size_t)(-1))
+		|| ft_test("abcdefBghijk", 'k', 12))
 	{
 		printf("KO: ft_memccpy\n");
 		return (1);
