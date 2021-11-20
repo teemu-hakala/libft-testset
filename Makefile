@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: thakala <thakala@student.42.fr>            +#+  +:+       +#+         #
+#    By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/04 19:05:04 by thakala           #+#    #+#              #
-#    Updated: 2021/11/12 13:16:29 by thakala          ###   ########.fr        #
+#    Updated: 2021/11/20 09:32:32 by thakala          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -121,7 +121,8 @@ subsystem:
 	$(MAKE) -C $(LIB_ROOT)
 
 norminette:
-	norminette $(foreach s, $(SRCS), $(addprefix $(LIB_ROOT)/, $(s)))
+	norminette $(LIB_ROOT)
+#	norminette $(foreach s, $(SRCS), $(addprefix $(LIB_ROOT)/, $(s)))
 #	$(shell norminette $(foreach s, $(SRCS), $(addprefix $(LIB_ROOT)/, $(s))))
 
 evaldirectories:
