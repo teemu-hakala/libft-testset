@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 11:07:58 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/20 14:36:23 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/20 14:43:11 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,8 @@ int	main(void)
 		sizeof(int) * 6)
 		|| ft_test_equal("ft_test_equal", 14)
 		|| ft_test("ft_test_unequal", "ft_test-unequal", 16)
-		|| ft_test("abcdefghij", "abcdefgxyz", 7))
+		|| ft_test("abcdefghij", "abcdefgxyz", 7)
+		|| ft_test("character", "pqrstring", 0))
 	{
 		printf("KO: ft_memcmp\n");
 		return (1);
