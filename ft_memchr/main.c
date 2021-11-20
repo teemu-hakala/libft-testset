@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
+/*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 13:49:17 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/12 12:57:57 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/20 19:06:48 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,21 @@
 #include <string.h>
 #include <stdio.h>
 
+static int	ft_test_diff(char *str, int c, size_t len)
+{
+	return (memchr(str, c, len) == ft_memchr(str, c, len));
+}
+
 static int	ft_test(char *str, int c)
 {
-	size_t	len;
-
-	len = strlen(str);
-	return (memchr(str, c, len) == ft_memchr(str, c, len));
+	return (ft_test_diff(str, c, strlen(str)));
 }
 
 int	main(void)
 {
 	if (!ft_test("Test string.", 's')
 		|| !ft_test("Test string.", '.')
-		|| !ft_test("Test string.", '\0'))
+		|| !ft_test_diff("Test str\0ng.", '\0', 13))
 	{
 		printf("KO: ft_memchr\n");
 		return (1);
