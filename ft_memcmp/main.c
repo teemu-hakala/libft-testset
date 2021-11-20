@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
+/*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 11:07:58 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/10 14:35:08 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/20 14:36:23 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,8 @@ int	main(void)
 		|| ft_test((int []){0, 1, 2, 3, 4, 5}, (int []){0, 1, 2, 3, 4, 6},
 		sizeof(int) * 6)
 		|| ft_test_equal("ft_test_equal", 14)
-		|| ft_test("ft_test_unequal", "ft_test-unequal", 16))
+		|| ft_test("ft_test_unequal", "ft_test-unequal", 16)
+		|| ft_test("abcdefghij", "abcdefgxyz", 7))
 	{
 		printf("KO: ft_memcmp\n");
 		return (1);
