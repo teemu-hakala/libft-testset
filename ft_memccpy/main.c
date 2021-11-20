@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 07:59:44 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/20 13:53:52 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/20 18:51:29 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,8 @@ int	main(void)
 {
 	if (ft_test("abcdefBghijklmnopq", 'B', (size_t)(-1))
 		|| ft_test("abcdefBghijk", 'C', (size_t)(-1))
-		|| ft_test("abcdefBghijk", 'k', 12))
+		|| ft_test("abcdefBghijk", 'k', 12)
+		|| ft_test("abcdefBghijk", 'k', 0))
 	{
 		printf("KO: ft_memccpy\n");
 		return (1);
