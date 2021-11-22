@@ -31,6 +31,11 @@ static int	ft_test(const char *str, const char chr, char **ref,
 	size_t	i;
 
 	splits = ft_strsplit(str, chr);
+	if (!splits)
+	{
+		printf("Memory allocation error.\n");
+		return (1);
+	}
 	i = 0;
 	while (splits[i] && ref[i])
 	{
@@ -46,7 +51,7 @@ static int	ft_test(const char *str, const char chr, char **ref,
 		free_all(splits, count);
 		return (1);
 	}
-	else if (splits[i])
+	else if (splits[0])
 		free_all(splits, count);
 	else
 		free(splits);
