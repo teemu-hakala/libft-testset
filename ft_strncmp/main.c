@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
+/*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 16:38:47 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/14 20:26:48 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/23 12:31:12 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ int	main(void)
 	if (!ft_test("", "", 0)
 		|| !ft_test("", "", 1)
 		|| !ft_test("test", "test", 0)
+		|| !ft_test("test", "test", -23)
 		|| !ft_test("aest", "fest", 0)
 		|| !ft_test("best", "zest", 10)
 		|| !ft_test("ok", "oko", 2)
