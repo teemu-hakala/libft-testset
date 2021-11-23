@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 16:38:47 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/23 14:40:09 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/23 14:41:42 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	main(void)
 	if (!ft_test("", "", 0)
 		|| !ft_test("", "", 1)
 		|| !ft_test("test", "test", 0)
-		|| !ft_test("test", "test", (size_t)-23)
+		|| !ft_test("test", "test", (size_t)(-23))
 		|| !ft_test("aest", "fest", 0)
 		|| !ft_test("best", "zest", 10)
 		|| !ft_test("ok", "oko", 2)
