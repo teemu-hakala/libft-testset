@@ -3,26 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
+/*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 06:53:59 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/05 07:35:49 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/24 17:03:01 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_tests.h"
-#include "../_test_ft/includes/test_ft.h"
+#include <stdio.h>
 #include <string.h>
 
 int	ft_test(int i, char *a)
 {
-	if (strcmp(ft_itoa(i), a))
-	{
-		ft_putstr_test("KO: ft_itoa\n");
-		ft_putstr_test(a);
-		return (1);
-	}
-	return (0);
+	return (!!strcmp(ft_itoa(i), a));
 }
 
 int	main(void)
@@ -39,7 +33,10 @@ int	main(void)
 		|| ft_test(55, "55")
 		|| ft_test(-3000, "-3000")
 		|| ft_test(250000, "250000"))
+	{
+		printf("KO: ft_itoa\n");
 		return (1);
-	else
-		ft_putstr_test("OK: ft_itoa\n");
+	}
+	printf("OK: ft_itoa\n");
+	return (0);
 }
