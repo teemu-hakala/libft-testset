@@ -1,0 +1,2220 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C ../libft
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+
+# Make data base, printed on Fri Nov 12 16:31:41 2021
+
+# Variables
+
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+SHELL = /bin/zsh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# environment
+VSCODE_NODE_CACHED_DATA_DIR = /Users/mrozhnov/Library/Application Support/Code/CachedData/3c4e3df9e89829dce27b7b5c24508306b151f30d
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n0000ljh0004wc/T/vscode-ipc-c1fb4cb4-573e-411d-8676-d989e92404c8.sock
+# environment
+VSCODE_CWD = /
+# environment
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.4GPBCXBnSM/Render
+# environment
+PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.rLXCutdjVn/Listeners
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /Users/mrozhnov/HIVE/evaluation/libft/test_thakala
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+HOME = /Users/mrozhnov
+# environment
+LOGNAME = mrozhnov
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+SHLVL = 1
+# environment
+USER = mrozhnov
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/zz/zyxvpxvq6csfxvn_n0000ljh0004wc/T/
+# environment
+VSCODE_IPC_HOOK = /Users/mrozhnov/Library/Application Support/Code/1.55.2-main.sock
+# environment
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# environment
+MAIL = mrozhnov@student.hive.fi
+# environment
+XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000002.Electron
+# environment
+__CF_USER_TEXT_ENCODING = 0x138C:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# environment
+LC_ALL = C
+# environment
+SECURITYSESSIONID = 186a8
+# environment
+MAKELEVEL = 1
+# environment
+LANG = C
+# environment
+VSCODE_PID = 647
+# variable set hash-table stats:
+# Load=41/1024=4%, Rehash=0, Collisions=0/48=0%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+
+# No files, no impossibilities in 0 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# files hash-table stats:
+# Load=0/1024=0%, Rehash=0, Collisions=0/0=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 0
+# # of strcache buffers: 0
+# strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
+# strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
+
+# Finished Make data base on Fri Nov 12 16:31:41 2021
+
+
+# Make data base, printed on Fri Nov 12 16:31:41 2021
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from `Makefile', line 76)
+FUNCTIONS_BONUS = ft_lstnew ft_lstdelone ft_lstdel ft_lstadd ft_lstiter ft_lstmap
+# environment
+VSCODE_LOG_NATIVE = false
+# makefile (from `Makefile', line 90)
+CLANG = gcc
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/mrozhnov/HIVE/evaluation/libft/test_thakala
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# makefile (from `Makefile', line 88)
+FUNCTIONS_DEBUG = $(foreach ft, $(FUNCTIONS), $(addsuffix _debug, $(ft)))
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+VSCODE_NODE_CACHED_DATA_DIR = /Users/mrozhnov/Library/Application Support/Code/CachedData/3c4e3df9e89829dce27b7b5c24508306b151f30d
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# makefile (from `Makefile', line 86)
+OBJS = $(foreach obj, $(FUNCTIONS), $(addsuffix .o, $(obj)))
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n0000ljh0004wc/T/vscode-ipc-c1fb4cb4-573e-411d-8676-d989e92404c8.sock
+# environment
+VSCODE_CWD = /
+# environment
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.4GPBCXBnSM/Render
+# environment
+PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.rLXCutdjVn/Listeners
+# automatic
+%F = $(notdir $%)
+# makefile (from `Makefile', line 104)
+PRG_DIR = _programs
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /Users/mrozhnov/HIVE/evaluation/libft/test_thakala
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+HOME = /Users/mrozhnov
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+LOGNAME = mrozhnov
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# makefile (from `Makefile', line 13)
+FUNCTIONS = ft_memset ft_bzero ft_memcpy ft_memccpy ft_memmove ft_memchr ft_memcmp ft_strlen ft_strdup ft_strcpy ft_strncpy ft_strcat ft_strncat ft_strlcat ft_strchr ft_strrchr ft_strstr ft_strnstr ft_strcmp ft_strncmp ft_atoi ft_isalpha ft_isdigit ft_isalnum ft_isascii ft_isprint ft_toupper ft_tolower
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from `Makefile', line 84)
+SRCS = $(foreach src, $(FUNCTIONS), $(addsuffix .c, $(src)))
+# makefile (from `Makefile', line 92)
+CPL_FLG = -Wall -Wextra -Werror
+# environment
+SHLVL = 1
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = mrozhnov
+# makefile
+.DEFAULT_GOAL := all
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from `Makefile', line 94)
+CPL_FLG_EXTRA = -Wconversion
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/zz/zyxvpxvq6csfxvn_n0000ljh0004wc/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/mrozhnov/Library/Application Support/Code/1.55.2-main.sock
+# makefile (from `Makefile', line 98)
+CPL_DEBUG = -g $(CPL_FLG)
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MAIL = mrozhnov@student.hive.fi
+# environment
+XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000002.Electron
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+__CF_USER_TEXT_ENCODING = 0x138C:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from `Makefile', line 43)
+FUNCTIONS2 = ft_memalloc ft_memodel ft_strnew ft_strdel ft_strclr ft_striter ft_striteri ft_strmap ft_strmapi ft_strequ ft_strnequ ft_strsub ft_strjoin ft_strtrim ft_strsplit ft_itoa ft_putchar ft_putstr ft_putendl ft_putnbr ft_putchar_fd ft_putstr_fd ft_putendl_fd ft_putnbr_fd ft_lstnew ft_lstdelone ft_lstdel ft_lstadd ft_lstiter ft_lstmap
+# environment
+LC_ALL = C
+# environment
+ 
+make: *** ../libft: No such file or directory.  Stop.
+make: *** [subsystem] Error 2
+ 
+SECURITYSESSIONID = 186a8
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# makefile (from `Makefile', line 100)
+LIB_NAME = libft
+# makefile (from `Makefile', line 96)
+CPL_FLAGS = $(CPL_FLG) $(CPL_FLG_EXTRA)
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# makefile (from `Makefile', line 102)
+LIB_ROOT = ../$(LIB_NAME)
+# environment
+VSCODE_PID = 647
+# variable set hash-table stats:
+# Load=78/1024=8%, Rehash=0, Collisions=3/228=1%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777227, inode 198468): 74 files, no impossibilities.
+
+# 74 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+ft_strmap: ft_strmap/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 281):
+	$(CLANG) $(CPL_FLG) ft_strmap/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strmap/ft_strmap
+	
+
+ft_lstiter: ft_lstiter/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 365):
+	$(CLANG) $(CPL_FLG) ft_lstiter/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_lstiter/ft_lstiter
+	
+
+ft_strclr: ft_strclr/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 269):
+	$(CLANG) $(CPL_FLG) ft_strclr/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strclr/ft_strclr
+	
+
+# Not a target:
+../libft/ft_strdel.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_strsplit_debug: ../libft/ft_strsplit.c ft_strsplit/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 541):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strsplit.c ft_strsplit/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strsplit/ft_strsplit
+	
+
+# Not a target:
+ft_strclr/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_striter_debug: ../libft/ft_striter.c ft_striter/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 505):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_striter.c ft_striter/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_striter/ft_striter
+	
+
+ft_putchar_debug: ../libft/ft_putchar.c ft_putchar/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 549):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_putchar.c ft_putchar/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putchar/ft_putchar
+	
+
+ft_itoa: ft_itoa/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 313):
+	$(CLANG) $(CPL_FLG) ft_itoa/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_itoa/ft_itoa
+	
+
+# Not a target:
+../libft/ft_strsub.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_putendl_fd/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_lstadd.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strmap/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_lstiter/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_lstmap.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_memcpy: ft_memcpy/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 149):
+	$(CLANG) $(CPL_FLG) ft_memcpy/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memcpy/ft_memcpy
+	
+
+ft_memcmp: ft_memcmp/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 165):
+	$(CLANG) $(CPL_FLG) ft_memcmp/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memcmp/ft_memcmp
+	
+
+ft_strlen: ft_strlen/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 169):
+	$(CLANG) $(CPL_FLG) ft_strlen/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strlen/ft_strlen
+	
+
+# Not a target:
+ft_lstadd/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_strncmp.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_putnbr_fd.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_lstnew_debug: ../libft/ft_lstnew.c ft_lstnew/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 581):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_lstnew.c ft_lstnew/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_lstnew/ft_lstnew
+	
+
+ft_isdigit: ft_isdigit/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 229):
+	$(CLANG) $(CPL_FLG) ft_isdigit/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_isdigit/ft_isdigit
+	
+
+# Not a target:
+../libft/ft_strcpy.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_isalnum.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: subsystem norminette evaldirectories ft_memset ft_bzero ft_memcpy ft_memccpy ft_memmove ft_memchr ft_memcmp ft_strlen ft_strdup ft_strcpy ft_strncpy ft_strcat ft_strncat ft_strlcat ft_strchr ft_strrchr ft_strstr ft_strnstr ft_strcmp ft_strncmp ft_atoi ft_isalpha ft_isdigit ft_isalnum ft_isascii ft_isprint ft_toupper ft_tolower
+#  Phony target (prerequisite of .PHONY).
+#  Command-line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
+
+# Not a target:
+../libft/ft_striteri.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_memcpy/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_memchr: ft_memchr/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 161):
+	$(CLANG) $(CPL_FLG) ft_memchr/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memchr/ft_memchr
+	
+
+# Not a target:
+ft_itoa/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_memcmp/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strmapi/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_strdup.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+
+# Not a target:
+ft_strlen/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: ft_memset ft_bzero ft_memcpy ft_memccpy ft_memmove ft_memchr ft_memcmp ft_strlen ft_strdup ft_strcpy ft_strncpy ft_strcat ft_strncat ft_strlcat ft_strchr ft_strrchr ft_strstr ft_strnstr ft_strcmp ft_strncmp ft_atoi ft_isalpha ft_isdigit ft_isalnum ft_isascii ft_isprint ft_toupper ft_tolower all subsystem norminette evaldirectories foreach foreach_debug
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_memset: ft_memset/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 141):
+	$(CLANG) $(CPL_FLG) ft_memset/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memset/ft_memset
+	
+
+# Not a target:
+../libft/ft_strstr.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_isdigit/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_striteri_debug: ../libft/ft_striteri.c ft_striteri/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 509):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_striteri.c ft_striteri/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_striteri/ft_striteri
+	
+
+# Not a target:
+../libft/ft_memmove.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_putendl_debug: ../libft/ft_putendl.c ft_putendl/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 557):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_putendl.c ft_putendl/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putendl/ft_putendl
+	
+
+# Not a target:
+ft_putnbr_fd/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+evaldirectories:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 128):
+	mkdir -p $(foreach f, $(FUNCTIONS), $(addprefix $(PRG_DIR)/, $(f)))
+	
+
+# Not a target:
+ft_strdel/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_strnew.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_memchr/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_memalloc: ft_memalloc/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 253):
+	$(CLANG) $(CPL_FLG) ft_memalloc/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memalloc/ft_memalloc
+	
+
+ft_tolower: ft_tolower/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 249):
+	$(CLANG) $(CPL_FLG) ft_tolower/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_tolower/ft_tolower
+	
+
+# Not a target:
+../libft/ft_toupper.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_strrchr: ft_strrchr/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 201):
+	$(CLANG) $(CPL_FLG) ft_strrchr/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strrchr/ft_strrchr
+	
+
+# Not a target:
+ft_memset/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_strjoin: ft_strjoin/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 301):
+	$(CLANG) $(CPL_FLG) ft_strjoin/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strjoin/ft_strjoin
+	
+
+# Not a target:
+../libft/ft_strnstr.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_putstr_fd.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_isascii/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_tolower/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_strcat.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_isalpha_debug: ../libft/ft_isalpha.c ft_isalpha/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 457):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_isalpha.c ft_isalpha/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_isalpha/ft_isalpha
+	
+
+# Not a target:
+../libft/ft_lstiter.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_memccpy.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strrchr/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_memalloc/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_strlcat: ft_strlcat/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 193):
+	$(CLANG) $(CPL_FLG) ft_strlcat/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strlcat/ft_strlcat
+	
+
+# Not a target:
+ft_strjoin/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strncpy/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_strncat: ft_strncat/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 189):
+	$(CLANG) $(CPL_FLG) ft_strncat/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strncat/ft_strncat
+	
+
+# Not a target:
+../libft/ft_strnequ.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_lstdel: ft_lstdel/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 357):
+	$(CLANG) $(CPL_FLG) ft_lstdel/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_lstdel/ft_lstdel
+	
+
+ft_lstmap_debug: ../libft/ft_lstmap.c ft_lstmap/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 601):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_lstmap.c ft_lstmap/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_lstmap/ft_lstmap
+	
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-12 16:28:27
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+ 
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+ft_putstr: ft_putstr/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 321):
+	$(CLANG) $(CPL_FLG) ft_putstr/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putstr/ft_putstr
+	
+
+ft_strdel_debug: ../libft/ft_strdel.c ft_strdel/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 497):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strdel.c ft_strdel/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strdel/ft_strdel
+	
+
+# Not a target:
+ft_bzero/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_isprint: ft_isprint/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 241):
+	$(CLANG) $(CPL_FLG) ft_isprint/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_isprint/ft_isprint
+	
+
+# Not a target:
+ft_strchr/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_strcat: ft_strcat/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 185):
+	$(CLANG) $(CPL_FLG) ft_strcat/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strcat/ft_strcat
+	
+
+# Not a target:
+ft_strcat/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_putchar_fd.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+debug: subsystem norminette evaldirectories ft_memset_debug ft_bzero_debug ft_memcpy_debug ft_memccpy_debug ft_memmove_debug ft_memchr_debug ft_memcmp_debug ft_strlen_debug ft_strdup_debug ft_strcpy_debug ft_strncpy_debug ft_strcat_debug ft_strncat_debug ft_strlcat_debug ft_strchr_debug ft_strrchr_debug ft_strstr_debug ft_strnstr_debug ft_strcmp_debug ft_strncmp_debug ft_atoi_debug ft_isalpha_debug ft_isdigit_debug ft_isalnum_debug ft_isascii_debug ft_isprint_debug ft_toupper_debug ft_tolower_debug
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_atoi.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_strsub_debug: ../libft/ft_strsub.c ft_strsub/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 529):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strsub.c ft_strsub/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strsub/ft_strsub
+	
+
+# Not a target:
+ft_strncat/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_lstadd_debug: ../libft/ft_lstadd.c ft_lstadd/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 593):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_lstadd.c ft_lstadd/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_lstadd/ft_lstadd
+	
+
+ft_strncpy_debug: ../libft/ft_strncpy.c ft_strncpy/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 413):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strncpy.c ft_strncpy/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strncpy/ft_strncpy
+	
+
+# Not a target:
+ft_putstr/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_lstdel/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_strsplit: ft_strsplit/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 309):
+	$(CLANG) $(CPL_FLG) ft_strsplit/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strsplit/ft_strsplit
+	
+
+ft_strncmp_debug: ../libft/ft_strncmp.c ft_strncmp/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 449):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strncmp.c ft_strncmp/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strncmp/ft_strncmp
+	
+
+ft_striteri: ft_striteri/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 277):
+	$(CLANG) $(CPL_FLG) ft_striteri/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_striteri/ft_striteri
+	
+
+# Not a target:
+../libft/ft_putnbr.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_memdel.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_isprint/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_strchr.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strsplit/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_striter: ft_striter/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 273):
+	$(CLANG) $(CPL_FLG) ft_striter/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_striter/ft_striter
+	
+
+ft_putchar: ft_putchar/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 317):
+	$(CLANG) $(CPL_FLG) ft_putchar/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putchar/ft_putchar
+	
+
+ft_strcpy_debug: ../libft/ft_strcpy.c ft_strcpy/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 409):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strcpy.c ft_strcpy/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strcpy/ft_strcpy
+	
+
+ft_isalnum_debug: ../libft/ft_isalnum.c ft_isalnum/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 465):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_isalnum.c ft_isalnum/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_isalnum/ft_isalnum
+	
+
+ft_strcmp_debug: ../libft/ft_strcmp.c ft_strcmp/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 445):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strcmp.c ft_strcmp/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strcmp/ft_strcmp
+	
+
+ft_isascii: ft_isascii/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 237):
+	$(CLANG) $(CPL_FLG) ft_isascii/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_isascii/ft_isascii
+	
+
+ft_strdup_debug: ../libft/ft_strdup.c ft_strdup/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 405):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strdup.c ft_strdup/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strdup/ft_strdup
+	
+
+# Not a target:
+../libft/ft_strequ.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+
+ft_lstdelone_debug: ../libft/ft_lstdelone.c ft_lstdelone/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 585):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_lstdelone.c ft_lstdelone/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_lstdelone/ft_lstdelone
+	
+
+# Not a target:
+../libft/ft_putendl_fd.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_lstnew: ft_lstnew/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 349):
+	$(CLANG) $(CPL_FLG) ft_lstnew/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_lstnew/ft_lstnew
+	
+
+# Not a target:
+ft_striter/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_strmap.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_memmove_debug: ../libft/ft_memmove.c ft_memmove/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 389):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_memmove.c ft_memmove/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memmove/ft_memmove
+	
+
+# Not a target:
+../libft/ft_strclr.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_putchar/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_strchr_debug: ../libft/ft_strchr.c ft_strchr/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 429):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strchr.c ft_strchr/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strchr/ft_strchr
+	
+
+ft_strnew_debug: ../libft/ft_strnew.c ft_strnew/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 493):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strnew.c ft_strnew/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strnew/ft_strnew
+	
+
+# Not a target:
+../libft/ft_striter.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_putnbr_fd: ft_putnbr_fd/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 345):
+	$(CLANG) $(CPL_FLG) ft_putnbr_fd/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putnbr_fd/ft_putnbr_fd
+	
+
+ft_toupper_debug: ../libft/ft_toupper.c ft_toupper/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 477):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_toupper.c ft_toupper/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_toupper/ft_toupper
+	
+
+ft_putendl: ft_putendl/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 325):
+	$(CLANG) $(CPL_FLG) ft_putendl/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putendl/ft_putendl
+	
+
+# Not a target:
+ft_lstnew/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_memcpy.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_putstr.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_itoa.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_memcmp.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_strlen.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+norminette:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 124):
+	norminette $(foreach s, $(SRCS), $(addprefix $(LIB_ROOT)/, $(s)))
+	
+
+ft_strnstr_debug: ../libft/ft_strnstr.c ft_strnstr/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 441):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strnstr.c ft_strnstr/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strnstr/ft_strnstr
+	
+
+foreach_debug: subsystem
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 136):
+	$(foreach ft, $(FUNCTIONS), \
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/$(ft).c $(ft)/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/$(ft)/$(ft);)
+	
+
+ft_putstr_fd_debug: ../libft/ft_putstr_fd.c ft_putstr_fd/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 569):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_putstr_fd.c ft_putstr_fd/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putstr_fd/ft_putstr_fd
+	
+
+# Not a target:
+ft_striteri/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_isdigit.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_memccpy_debug: ../libft/ft_memccpy.c ft_memccpy/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 385):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_memccpy.c ft_memccpy/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memccpy/ft_memccpy
+	
+
+ft_strstr_debug: ../libft/ft_strstr.c ft_strstr/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 437):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strstr.c ft_strstr/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strstr/ft_strstr
+	
+
+# Not a target:
+ft_putendl/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_bzero.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_memchr.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_isalpha: ft_isalpha/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 225):
+	$(CLANG) $(CPL_FLG) ft_isalpha/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_isalpha/ft_isalpha
+	
+
+ft_strnequ_debug: ../libft/ft_strnequ.c ft_strnequ/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 525):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strnequ.c ft_strnequ/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strnequ/ft_strnequ
+	
+
+# Not a target:
+../libft/ft_memset.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_strtrim.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ 
+ft_putchar_fd_debug: ../libft/ft_putchar_fd.c ft_putchar_fd/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 565):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_putchar_fd.c ft_putchar_fd/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putchar_fd/ft_putchar_fd
+	
+
+ft_atoi_debug: ../libft/ft_atoi.c ft_atoi/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 453):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_atoi.c ft_atoi/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_atoi/ft_atoi
+	
+
+# Not a target:
+ft_putnbr/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_strdel: ft_strdel/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 265):
+	$(CLANG) $(CPL_FLG) ft_strdel/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strdel/ft_strdel
+	
+
+# Not a target:
+../libft/ft_strrchr.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_memalloc.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_strncpy.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_tolower.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_strjoin.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_strtrim_debug: ../libft/ft_strtrim.c ft_strtrim/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 537):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strtrim.c ft_strtrim/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strtrim/ft_strtrim
+	
+
+# Not a target:
+ft_isalpha/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_putnbr_debug: ../libft/ft_putnbr.c ft_putnbr/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 561):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_putnbr.c ft_putnbr/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putnbr/ft_putnbr
+	
+
+ft_memdel_debug: ../libft/ft_memdel.c ft_memdel/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 489):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_memdel.c ft_memdel/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memdel/ft_memdel
+	
+
+ft_strsub: ft_strsub/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 297):
+	$(CLANG) $(CPL_FLG) ft_strsub/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strsub/ft_strsub
+	
+
+ft_lstadd: ft_lstadd/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 361):
+	$(CLANG) $(CPL_FLG) ft_lstadd/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_lstadd/ft_lstadd
+	
+
+# Not a target:
+../libft/ft_lstdelone.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strdup/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_lstmap: ft_lstmap/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 369):
+	$(CLANG) $(CPL_FLG) ft_lstmap/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_lstmap/ft_lstmap
+	
+
+ft_strncpy: ft_strncpy/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 181):
+	$(CLANG) $(CPL_FLG) ft_strncpy/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strncpy/ft_strncpy
+	
+
+ft_strncmp: ft_strncmp/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 217):
+	$(CLANG) $(CPL_FLG) ft_strncmp/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strncmp/ft_strncmp
+	
+
+ft_strequ_debug: ../libft/ft_strequ.c ft_strequ/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 521):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strequ.c ft_strequ/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strequ/ft_strequ
+	
+
+# Not a target:
+../libft/ft_strncat.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_putendl_fd_debug: ../libft/ft_putendl_fd.c ft_putendl_fd/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 573):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_putendl_fd.c ft_putendl_fd/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putendl_fd/ft_putendl_fd
+	
+
+ft_isalnum: ft_isalnum/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 233):
+	$(CLANG) $(CPL_FLG) ft_isalnum/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_isalnum/ft_isalnum
+	
+
+ft_strmap_debug: ../libft/ft_strmap.c ft_strmap/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 513):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strmap.c ft_strmap/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strmap/ft_strmap
+	
+
+ft_lstiter_debug: ../libft/ft_lstiter.c ft_lstiter/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 597):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_lstiter.c ft_lstiter/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_lstiter/ft_lstiter
+	
+
+ft_strclr_debug: ../libft/ft_strclr.c ft_strclr/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 501):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strclr.c ft_strclr/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strclr/ft_strclr
+	
+
+ft_strcpy: ft_strcpy/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 177):
+	$(CLANG) $(CPL_FLG) ft_strcpy/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strcpy/ft_strcpy
+	
+
+ft_strcmp: ft_strcmp/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 213):
+	$(CLANG) $(CPL_FLG) ft_strcmp/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strcmp/ft_strcmp
+	
+
+ft_bzero: ft_bzero/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 145):
+	$(CLANG) $(CPL_FLG) ft_bzero/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_bzero/ft_bzero
+	
+
+# Not a target:
+ft_strcmp/main.c:
+#  Implicit rule search has not been done.
+ 
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strsub/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_isprint.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_lstdelone: ft_lstdelone/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 353):
+	$(CLANG) $(CPL_FLG) ft_lstdelone/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_lstdelone/ft_lstdelone
+	
+
+# Not a target:
+ft_lstmap/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_strdup: ft_strdup/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 173):
+	$(CLANG) $(CPL_FLG) ft_strdup/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strdup/ft_strdup
+	
+
+# Not a target:
+ft_strncmp/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_memmove: ft_memmove/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 157):
+	$(CLANG) $(CPL_FLG) ft_memmove/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memmove/ft_memmove
+	
+
+ft_memcpy_debug: ../libft/ft_memcpy.c ft_memcpy/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 381):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_memcpy.c ft_memcpy/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memcpy/ft_memcpy
+	
+
+# Not a target:
+ft_strcpy/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_itoa_debug: ../libft/ft_itoa.c ft_itoa/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 545):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_itoa.c ft_itoa/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_itoa/ft_itoa
+	
+
+ft_strchr: ft_strchr/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 197):
+	$(CLANG) $(CPL_FLG) ft_strchr/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strchr/ft_strchr
+	
+
+# Not a target:
+ft_isalnum/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_strmapi.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_memcmp_debug: ../libft/ft_memcmp.c ft_memcmp/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 397):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_memcmp.c ft_memcmp/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memcmp/ft_memcmp
+	
+
+# Not a target:
+../libft/ft_strsplit.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_strlen_debug: ../libft/ft_strlen.c ft_strlen/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 401):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strlen.c ft_strlen/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strlen/ft_strlen
+	
+
+ft_strnew: ft_strnew/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 261):
+	$(CLANG) $(CPL_FLG) ft_strnew/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strnew/ft_strnew
+	
+
+# Not a target:
+ft_atoi/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_isdigit_debug: ../libft/ft_isdigit.c ft_isdigit/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 461):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_isdigit.c ft_isdigit/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_isdigit/ft_isdigit
+	
+
+# Not a target:
+../libft/ft_lstdel.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_putchar.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_toupper: ft_toupper/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 245):
+	$(CLANG) $(CPL_FLG) ft_toupper/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_toupper/ft_toupper
+	
+
+# Not a target:
+ft_lstdelone/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_strmapi_debug: ../libft/ft_strmapi.c ft_strmapi/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 517):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strmapi.c ft_strmapi/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strmapi/ft_strmapi
+	
+
+subsystem:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# automatic
+# @ := subsystem
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=3/14=21%
+#  commands to execute (from `Makefile', line 121):
+	$(MAKE) -C $(LIB_ROOT)
+	
+
+# Not a target:
+ft_memmove/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_putstr_fd: ft_putstr_fd/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 337):
+	$(CLANG) $(CPL_FLG) ft_putstr_fd/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putstr_fd/ft_putstr_fd
+	
+
+ft_putnbr_fd_debug: ../libft/ft_putnbr_fd.c ft_putnbr_fd/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 577):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_putnbr_fd.c ft_putnbr_fd/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putnbr_fd/ft_putnbr_fd
+	
+
+foreach: subsystem
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 131):
+	$(foreach ft, $(FUNCTIONS), \
+	$(CLANG) $(CPL_FLG) $(ft)/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/$(ft)/$(ft);)
+	
+
+ft_strnstr: ft_strnstr/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 209):
+	$(CLANG) $(CPL_FLG) ft_strnstr/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strnstr/ft_strnstr
+	
+
+# Not a target:
+ft_strequ/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_memset_debug: ../libft/ft_memset.c ft_memset/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 373):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_memset.c ft_memset/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memset/ft_memset
+	
+
+ 
+# Not a target:
+ft_strnew/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_lstnew.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_memchr_debug: ../libft/ft_memchr.c ft_memchr/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 393):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_memchr.c ft_memchr/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memchr/ft_memchr
+	
+
+# Not a target:
+ft_toupper/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_strstr: ft_strstr/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 205):
+	$(CLANG) $(CPL_FLG) ft_strstr/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strstr/ft_strstr
+	
+
+ft_memccpy: ft_memccpy/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 153):
+	$(CLANG) $(CPL_FLG) ft_memccpy/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memccpy/ft_memccpy
+	
+
+# Not a target:
+../libft/ft_isascii.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_tolower_debug: ../libft/ft_tolower.c ft_tolower/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 481):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_tolower.c ft_tolower/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_tolower/ft_tolower
+	
+
+# Not a target:
+ft_strnstr/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_strnequ: ft_strnequ/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 293):
+	$(CLANG) $(CPL_FLG) ft_strnequ/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strnequ/ft_strnequ
+	
+
+ft_strrchr_debug: ../libft/ft_strrchr.c ft_strrchr/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 433):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strrchr.c ft_strrchr/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strrchr/ft_strrchr
+	
+
+# Not a target:
+ft_putstr_fd/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_memalloc_debug: ../libft/ft_memalloc.c ft_memalloc/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 485):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_memalloc.c ft_memalloc/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memalloc/ft_memalloc
+	
+
+# Not a target:
+../libft/ft_strcmp.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_strjoin_debug: ../libft/ft_strjoin.c ft_strjoin/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 533):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strjoin.c ft_strjoin/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strjoin/ft_strjoin
+	
+
+# Not a target:
+../libft/ft_putendl.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_putchar_fd: ft_putchar_fd/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 333):
+	$(CLANG) $(CPL_FLG) ft_putchar_fd/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putchar_fd/ft_putchar_fd
+	
+
+ft_isascii_debug: ../libft/ft_isascii.c ft_isascii/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 469):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_isascii.c ft_isascii/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_isascii/ft_isascii
+	
+
+# Not a target:
+ft_memccpy/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strstr/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_atoi: ft_atoi/main.c
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 221):
+	$(CLANG) $(CPL_FLG) ft_atoi/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_atoi/ft_atoi
+	
+
+# Not a target:
+ft_strnequ/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libft/ft_strlcat.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_strtrim: ft_strtrim/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 305):
+	$(CLANG) $(CPL_FLG) ft_strtrim/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strtrim/ft_strtrim
+	
+
+ft_strlcat_debug: ../libft/ft_strlcat.c ft_strlcat/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 425):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strlcat.c ft_strlcat/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strlcat/ft_strlcat
+	
+
+ft_memdel: ft_memdel/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 257):
+	$(CLANG) $(CPL_FLG) ft_memdel/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memdel/ft_memdel
+	
+
+ft_putnbr: ft_putnbr/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 329):
+	$(CLANG) $(CPL_FLG) ft_putnbr/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putnbr/ft_putnbr
+	
+
+ft_strncat_debug: ../libft/ft_strncat.c ft_strncat/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 421):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strncat.c ft_strncat/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strncat/ft_strncat
+	
+
+# Not a target:
+ft_putchar_fd/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_putstr_debug: ../libft/ft_putstr.c ft_putstr/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 553):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_putstr.c ft_putstr/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putstr/ft_putstr
+	
+
+ft_bzero_debug: ../libft/ft_bzero.c ft_bzero/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 377):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_bzero.c ft_bzero/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_bzero/ft_bzero
+	
+
+# Not a target:
+../libft/ft_isalpha.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_isprint_debug: ../libft/ft_isprint.c ft_isprint/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 473):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_isprint.c ft_isprint/main.c \
+ 
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_isprint/ft_isprint
+	
+
+ft_strcat_debug: ../libft/ft_strcat.c ft_strcat/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 417):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_strcat.c ft_strcat/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strcat/ft_strcat
+	
+
+ft_putendl_fd: ft_putendl_fd/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 341):
+	$(CLANG) $(CPL_FLG) ft_putendl_fd/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_putendl_fd/ft_putendl_fd
+	
+
+# Not a target:
+ft_strtrim/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_lstdel_debug: ../libft/ft_lstdel.c ft_lstdel/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 589):
+	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/ft_lstdel.c ft_lstdel/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_lstdel/ft_lstdel
+	
+
+ft_strequ: ft_strequ/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 289):
+	$(CLANG) $(CPL_FLG) ft_strequ/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strequ/ft_strequ
+	
+
+# Not a target:
+ft_strlcat/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_strmapi: ft_strmapi/main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 285):
+	$(CLANG) $(CPL_FLG) ft_strmapi/main.c \
+	-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strmapi/ft_strmapi
+	
+
+# Not a target:
+ft_memdel/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=243/1024=24%, Rehash=0, Collisions=134/530=25%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Fri Nov 12 16:31:42 2021
+
+ 

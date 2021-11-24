@@ -1,0 +1,75 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/mrozhnov/HIVE/evaluation/libft/test_thakala'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C ../libft
+ 
+make: Entering an unknown directory
+make: Leaving an unknown directory
+ 
+make: *** ../libft: No such file or directory.  Stop.
+make: *** [subsystem] Error 2
+ 
+norminette  ../libft/ft_memset.c  ../libft/ft_bzero.c  ../libft/ft_memcpy.c  ../libft/ft_memccpy.c  ../libft/ft_memmove.c  ../libft/ft_memchr.c  ../libft/ft_memcmp.c  ../libft/ft_strlen.c  ../libft/ft_strdup.c  ../libft/ft_strcpy.c  ../libft/ft_strncpy.c  ../libft/ft_strcat.c  ../libft/ft_strncat.c  ../libft/ft_strlcat.c  ../libft/ft_strchr.c  ../libft/ft_strrchr.c  ../libft/ft_strstr.c  ../libft/ft_strnstr.c  ../libft/ft_strcmp.c  ../libft/ft_strncmp.c  ../libft/ft_atoi.c  ../libft/ft_isalpha.c  ../libft/ft_isdigit.c  ../libft/ft_isalnum.c  ../libft/ft_isascii.c  ../libft/ft_isprint.c  ../libft/ft_toupper.c  ../libft/ft_tolower.c
+mkdir -p  _programs/ft_memset  _programs/ft_bzero  _programs/ft_memcpy  _programs/ft_memccpy  _programs/ft_memmove  _programs/ft_memchr  _programs/ft_memcmp  _programs/ft_strlen  _programs/ft_strdup  _programs/ft_strcpy  _programs/ft_strncpy  _programs/ft_strcat  _programs/ft_strncat  _programs/ft_strlcat  _programs/ft_strchr  _programs/ft_strrchr  _programs/ft_strstr  _programs/ft_strnstr  _programs/ft_strcmp  _programs/ft_strncmp  _programs/ft_atoi  _programs/ft_isalpha  _programs/ft_isdigit  _programs/ft_isalnum  _programs/ft_isascii  _programs/ft_isprint  _programs/ft_toupper  _programs/ft_tolower
+gcc -Wall -Wextra -Werror ft_memset/main.c \
+		-L../libft -lft -o _programs/ft_memset/ft_memset
+gcc -Wall -Wextra -Werror ft_bzero/main.c \
+		-L../libft -lft -o _programs/ft_bzero/ft_bzero
+gcc -Wall -Wextra -Werror ft_memcpy/main.c \
+		-L../libft -lft -o _programs/ft_memcpy/ft_memcpy
+gcc -Wall -Wextra -Werror ft_memccpy/main.c \
+		-L../libft -lft -o _programs/ft_memccpy/ft_memccpy
+ 
+gcc -Wall -Wextra -Werror ft_memmove/main.c \
+		-L../libft -lft -o _programs/ft_memmove/ft_memmove
+gcc -Wall -Wextra -Werror ft_memchr/main.c \
+		-L../libft -lft -o _programs/ft_memchr/ft_memchr
+gcc -Wall -Wextra -Werror ft_memcmp/main.c \
+		-L../libft -lft -o _programs/ft_memcmp/ft_memcmp
+gcc -Wall -Wextra -Werror ft_strlen/main.c \
+		-L../libft -lft -o _programs/ft_strlen/ft_strlen
+gcc -Wall -Wextra -Werror ft_strdup/main.c \
+		-L../libft -lft -o _programs/ft_strdup/ft_strdup
+ 
+gcc -Wall -Wextra -Werror ft_strcpy/main.c \
+		-L../libft -lft -o _programs/ft_strcpy/ft_strcpy
+gcc -Wall -Wextra -Werror ft_strncpy/main.c \
+		-L../libft -lft -o _programs/ft_strncpy/ft_strncpy
+gcc -Wall -Wextra -Werror ft_strcat/main.c \
+		-L../libft -lft -o _programs/ft_strcat/ft_strcat
+gcc -Wall -Wextra -Werror ft_strncat/main.c \
+		-L../libft -lft -o _programs/ft_strncat/ft_strncat
+gcc -Wall -Wextra -Werror ft_strlcat/main.c \
+		-L../libft -lft -o _programs/ft_strlcat/ft_strlcat
+gcc -Wall -Wextra -Werror ft_strchr/main.c \
+		-L../libft -lft -o _programs/ft_strchr/ft_strchr
+ 
+gcc -Wall -Wextra -Werror ft_strrchr/main.c \
+		-L../libft -lft -o _programs/ft_strrchr/ft_strrchr
+gcc -Wall -Wextra -Werror ft_strstr/main.c \
+		-L../libft -lft -o _programs/ft_strstr/ft_strstr
+gcc -Wall -Wextra -Werror ft_strnstr/main.c \
+		-L../libft -lft -o _programs/ft_strnstr/ft_strnstr
+gcc -Wall -Wextra -Werror ft_strcmp/main.c \
+		-L../libft -lft -o _programs/ft_strcmp/ft_strcmp
+gcc -Wall -Wextra -Werror ft_strncmp/main.c \
+		-L../libft -lft -o _programs/ft_strncmp/ft_strncmp
+ 
+gcc -Wall -Wextra -Werror ft_atoi/main.c \
+		-L../libft -lft -o _programs/ft_atoi/ft_atoi
+gcc -Wall -Wextra -Werror ft_isalpha/main.c \
+		-L../libft -lft -o _programs/ft_isalpha/ft_isalpha
+gcc -Wall -Wextra -Werror ft_isdigit/main.c \
+		-L../libft -lft -o _programs/ft_isdigit/ft_isdigit
+gcc -Wall -Wextra -Werror ft_isalnum/main.c \
+		-L../libft -lft -o _programs/ft_isalnum/ft_isalnum
+ 
+gcc -Wall -Wextra -Werror ft_isascii/main.c \
+		-L../libft -lft -o _programs/ft_isascii/ft_isascii
+gcc -Wall -Wextra -Werror ft_isprint/main.c \
+		-L../libft -lft -o _programs/ft_isprint/ft_isprint
+gcc -Wall -Wextra -Werror ft_toupper/main.c \
+		-L../libft -lft -o _programs/ft_toupper/ft_toupper
+gcc -Wall -Wextra -Werror ft_tolower/main.c \
+		-L../libft -lft -o _programs/ft_tolower/ft_tolower
+make: Leaving directory `/Users/mrozhnov/HIVE/evaluation/libft/test_thakala'
+ 
