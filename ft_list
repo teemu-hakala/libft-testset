@@ -1,6 +1,8 @@
 
 
 FUNCTIONS = \
+		ft_memset		\
+\
 		ft_strlen		\
 		ft_isalpha		\
 		ft_isdigit		\
