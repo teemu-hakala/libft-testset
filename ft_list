@@ -1,0 +1,67 @@
+
+
+FUNCTIONS = \
+		ft_strlen		\
+		ft_isalpha		\
+		ft_isdigit		\
+		ft_isalnum		\
+		ft_isascii		\
+		ft_isprint		\
+\
+		ft_toupper		\
+		ft_tolower		\
+		ft_memchr		\
+		ft_strchr		\
+		ft_strrchr		\
+		ft_bzero		\
+\
+		ft_memcpy		\
+		ft_strcpy		\
+		ft_strcat		\
+		ft_strcmp		\
+		ft_strstr		\
+		ft_memmove		\
+		ft_memcmp		\
+\
+		ft_strlcat		\
+		ft_strdup		\
+		ft_atoi			\
+		ft_memccpy		\
+		ft_strnstr		\
+		ft_strncmp		\
+		ft_strncpy		\
+		ft_strncat		\
+\
+		ft_memalloc		\
+		ft_putchar		\
+		ft_putstr		\
+		ft_putendl		\
+		ft_putnbr		\
+		ft_strnew		\
+		ft_strdel		\
+		ft_strclr		\
+		ft_strequ		\
+		ft_strnequ		\
+		ft_strsub		\
+		ft_strjoin		\
+		ft_putchar_fd	\
+		ft_putstr_fd	\
+		ft_putendl__fd	\
+		ft_putnbr_fd	\
+\
+		ft_memdel		\
+		ft_striter		\
+		ft_striteri		\
+		ft_strmap		\
+		ft_strmapi		\
+		ft_strtrim		\
+		ft_strsplit		\
+		ft_itoa			\
+\
+		ft_lstnew		\
+		ft_lstadd		\
+		ft_lstdelone	\
+		ft_lstdel		\
+		ft_lstiter		\
+		ft_lstmap		\
+
