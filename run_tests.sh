@@ -42,8 +42,8 @@ ft_strsub
 ft_strjoin
 ft_strtrim
 ft_strsplit
-ft_itoa
-ft_putchar
+ft_itoa"
+rest="ft_putchar
 ft_putstr
 ft_putendl
 ft_putnbr
