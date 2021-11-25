@@ -6,7 +6,7 @@
 #    By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/04 19:05:04 by thakala           #+#    #+#              #
-#    Updated: 2021/11/20 09:32:32 by thakala          ###   ########.fr        #
+#    Updated: 2021/11/24 17:59:54 by thakala          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,9 +38,7 @@ FUNCTIONS = \
 	ft_isascii\
 	ft_isprint \
 	ft_toupper \
-	ft_tolower
-
-FUNCTIONS2 = \
+	ft_tolower \
 	ft_memalloc \
 	ft_memdel \
 	ft_strnew \
@@ -56,7 +54,9 @@ FUNCTIONS2 = \
 	ft_strjoin \
 	ft_strtrim \
 	ft_strsplit \
-	ft_itoa \
+	ft_itoa
+
+FUNCTIONS2 = \
 	ft_putchar \
 	ft_putstr \
 	ft_putendl \
