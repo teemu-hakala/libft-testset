@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 12:09:08 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/19 16:02:56 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/26 19:53:06 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,23 @@ static void	free_all(char **memory, size_t count)
 	free(memory);
 }
 
-static int	ft_test(const char *str, const char chr, char **ref,
-	size_t count)
+static size_t	arrlen(char **arr)
+{
+	size_t	len;
+
+	len = 0;
+	while (*arr++)
+		len++;
+	return (len);
+}
+
+static int	ft_test(const char *str, const char chr, char **ref)
 {
 	char	**splits;
 	size_t	i;
+	size_t	count;
 
+	count = arrlen(ref);
 	splits = ft_strsplit(str, chr);
 	if (!splits)
 	{
@@ -58,16 +69,23 @@ static int	ft_test(const char *str, const char chr, char **ref,
 	return (0);
 }
 
+static int	ft_test_either(const char *str, const char chr, const char **ref1,
+	const char **ref2)
+{
+	return (!(ft_test(str, chr, ref1)
+			|| ft_test(str, chr, ref2)));
+}
+
 int	main(void)
 {
-	if (ft_test("", '*',
-			(char *[]){NULL}, 0)
-		|| ft_test("******", '*',
-			(char *[]){NULL}, 0)
+	if (ft_test_either("", '*',
+			(char *[]){"", NULL}, (char *[]){NULL})
+		|| ft_test_either("******", '*',
+			(char *[]){"", NULL}, (char *[]){NULL})
 		|| ft_test("***a***", '*',
-			(char *[]){"a", NULL}, 1)
+			(char *[]){"a", NULL})
 		|| ft_test("*hello*fellow***students*", '*',
-			(char *[]){"hello", "fellow", "students", NULL}, 3))
+			(char *[]){"hello", "fellow", "students", NULL}))
 	{
 		printf("KO: ft_strsplit\n");
 		return (1);
