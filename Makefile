@@ -6,7 +6,7 @@
 #    By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/04 19:05:04 by thakala           #+#    #+#              #
-#    Updated: 2021/11/26 20:00:55 by thakala          ###   ########.fr        #
+#    Updated: 2021/11/26 22:42:40 by thakala          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -81,6 +81,10 @@ FUNCTIONS_BONUS = \
 	ft_lstiter \
 	ft_lstmap
 
+FUNCTIONS_ALL = \
+	$(FUNCTIONS) \
+	$(FUNCTIONS2)
+
 SRCS = $(foreach src, $(FUNCTIONS), $(addsuffix .c, $(src)))
 
 OBJS = $(foreach obj, $(FUNCTIONS), $(addsuffix .o, $(obj)))
@@ -126,7 +130,7 @@ norminette:
 #	$(shell norminette $(foreach s, $(SRCS), $(addprefix $(LIB_ROOT)/, $(s))))
 
 evaldirectories:
-	mkdir -p $(foreach f, $(FUNCTIONS), $(addprefix $(PRG_DIR)/, $(f)))
+	mkdir -p $(foreach f, $(FUNCTIONS_ALL), $(addprefix $(PRG_DIR)/, $(f)))
 
 foreach: subsystem
 	$(foreach ft, $(FUNCTIONS), \
