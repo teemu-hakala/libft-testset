@@ -6,15 +6,16 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 16:37:17 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/28 16:55:52 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/28 16:56:43 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_tests.h"
+#include <stdio.h>
 
 static int	ft_test(const char *origin, const char *charset)
 {
-	return (strpbrk(origin, charset) == ft_strpbrk(origin, charset));
+	return (strpbrk(origin, charset) != ft_strpbrk(origin, charset));
 }
 
 int	main(void)
