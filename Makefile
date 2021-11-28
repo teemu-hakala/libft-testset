@@ -6,7 +6,7 @@
 #    By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/04 19:05:04 by thakala           #+#    #+#              #
-#    Updated: 2021/11/26 22:42:40 by thakala          ###   ########.fr        #
+#    Updated: 2021/11/28 13:47:53 by thakala          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,16 +74,15 @@ FUNCTIONS2 = \
 
 
 FUNCTIONS_BONUS = \
-	ft_lstnew \
-	ft_lstdelone \
-	ft_lstdel \
-	ft_lstadd \
-	ft_lstiter \
-	ft_lstmap
+	ft_memdup \
+	ft_isspace \
+	ft_strpbrk \
+	ft_strsep
 
 FUNCTIONS_ALL = \
 	$(FUNCTIONS) \
-	$(FUNCTIONS2)
+	$(FUNCTIONS2) \
+	$(FUNCTIONS_BONUS)
 
 SRCS = $(foreach src, $(FUNCTIONS), $(addsuffix .c, $(src)))
 
