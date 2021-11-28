@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 10:05:03 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/28 18:45:50 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/28 19:29:36 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,5 +88,6 @@ int		ft_isspace(int c);
 char	*ft_strpbrk(const char *s, const char *charset);
 char	*ft_strsep(char **stringp, const char *delim);
 size_t	ft_strspn(const char *s, const char *charset);
+size_t	ft_strcspn(const char *s, const char *charset);
 
 #endif

@@ -814,6 +814,90 @@
 			"externalConsole": false,
 			"MIMode": "lldb",
 			"preLaunchTask": "C/C++: clang build ft_lstmap"
+		},
+
+		{
+			"name": "clang - ft_memdup build and debug",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/libft-testset/_programs/ft_memdup/ft_memdup",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "lldb",
+			"preLaunchTask": "C/C++: clang build ft_memdup"
+		},
+
+		{
+			"name": "clang - ft_isspace build and debug",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/libft-testset/_programs/ft_isspace/ft_isspace",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "lldb",
+			"preLaunchTask": "C/C++: clang build ft_isspace"
+		},
+
+		{
+			"name": "clang - ft_strpbrk build and debug",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/libft-testset/_programs/ft_strpbrk/ft_strpbrk",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "lldb",
+			"preLaunchTask": "C/C++: clang build ft_strpbrk"
+		},
+
+		{
+			"name": "clang - ft_strsep build and debug",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/libft-testset/_programs/ft_strsep/ft_strsep",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "lldb",
+			"preLaunchTask": "C/C++: clang build ft_strsep"
+		},
+
+		{
+			"name": "clang - ft_strspn build and debug",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/libft-testset/_programs/ft_strspn/ft_strspn",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "lldb",
+			"preLaunchTask": "C/C++: clang build ft_strspn"
+		},
+
+		{
+			"name": "clang - ft_strcspn build and debug",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/libft-testset/_programs/ft_strcspn/ft_strcspn",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "lldb",
+			"preLaunchTask": "C/C++: clang build ft_strcspn"
 		}
 	]
 }

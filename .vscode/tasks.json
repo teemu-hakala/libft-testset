@@ -1565,6 +1565,168 @@
 			],
 			"group": "build",
 			"detail": "compiler: /usr/bin/clang"
+		},
+
+		{
+			"type": "cppbuild",
+			"label": "C/C++: clang build ft_memdup",
+			"command": "/usr/bin/clang",
+			"args": [
+				"-g",
+				"-Wall",
+				"-Werror",
+				"-Wextra",
+				"-Wconversion",
+				"${workspaceFolder}/libft-testset/ft_memdup/main.c",
+				"${workspaceFolder}/libft/ft_memdup.c",
+				"-L${workspaceFolder}/libft",
+				"-lft",
+				"-o",
+				"${workspaceFolder}/libft-testset/_programs/ft_memdup/ft_memdup"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/clang"
+		},
+
+		{
+			"type": "cppbuild",
+			"label": "C/C++: clang build ft_isspace",
+			"command": "/usr/bin/clang",
+			"args": [
+				"-g",
+				"-Wall",
+				"-Werror",
+				"-Wextra",
+				"-Wconversion",
+				"${workspaceFolder}/libft-testset/ft_isspace/main.c",
+				"${workspaceFolder}/libft/ft_isspace.c",
+				"-L${workspaceFolder}/libft",
+				"-lft",
+				"-o",
+				"${workspaceFolder}/libft-testset/_programs/ft_isspace/ft_isspace"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/clang"
+		},
+
+		{
+			"type": "cppbuild",
+			"label": "C/C++: clang build ft_strpbrk",
+			"command": "/usr/bin/clang",
+			"args": [
+				"-g",
+				"-Wall",
+				"-Werror",
+				"-Wextra",
+				"-Wconversion",
+				"${workspaceFolder}/libft-testset/ft_strpbrk/main.c",
+				"${workspaceFolder}/libft/ft_strpbrk.c",
+				"-L${workspaceFolder}/libft",
+				"-lft",
+				"-o",
+				"${workspaceFolder}/libft-testset/_programs/ft_strpbrk/ft_strpbrk"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/clang"
+		},
+
+		{
+			"type": "cppbuild",
+			"label": "C/C++: clang build ft_strsep",
+			"command": "/usr/bin/clang",
+			"args": [
+				"-g",
+				"-Wall",
+				"-Werror",
+				"-Wextra",
+				"-Wconversion",
+				"${workspaceFolder}/libft-testset/ft_strsep/main.c",
+				"${workspaceFolder}/libft/ft_strsep.c",
+				"-L${workspaceFolder}/libft",
+				"-lft",
+				"-o",
+				"${workspaceFolder}/libft-testset/_programs/ft_strsep/ft_strsep"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/clang"
+		},
+
+		{
+			"type": "cppbuild",
+			"label": "C/C++: clang build ft_strspn",
+			"command": "/usr/bin/clang",
+			"args": [
+				"-g",
+				"-Wall",
+				"-Werror",
+				"-Wextra",
+				"-Wconversion",
+				"${workspaceFolder}/libft-testset/ft_strspn/main.c",
+				"${workspaceFolder}/libft/ft_strspn.c",
+				"-L${workspaceFolder}/libft",
+				"-lft",
+				"-o",
+				"${workspaceFolder}/libft-testset/_programs/ft_strspn/ft_strspn"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/clang"
+		},
+
+		{
+			"type": "cppbuild",
+			"label": "C/C++: clang build ft_strcspn",
+			"command": "/usr/bin/clang",
+			"args": [
+				"-g",
+				"-Wall",
+				"-Werror",
+				"-Wextra",
+				"-Wconversion",
+				"${workspaceFolder}/libft-testset/ft_strcspn/main.c",
+				"${workspaceFolder}/libft/ft_strcspn.c",
+				"-L${workspaceFolder}/libft",
+				"-lft",
+				"-o",
+				"${workspaceFolder}/libft-testset/_programs/ft_strcspn/ft_strcspn"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/clang"
 		}
 	]
 }
