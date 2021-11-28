@@ -60,7 +60,8 @@ ft_lstmap
 ft_memdup
 ft_isspace
 ft_strpbrk
-ft_strsep"
+ft_strsep
+ft_strspn"
 
 for v in $s; do
 	echo "$v: subsystem $v/main.c"

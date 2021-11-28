@@ -6,7 +6,7 @@
 #    By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/04 19:05:04 by thakala           #+#    #+#              #
-#    Updated: 2021/11/28 14:39:17 by thakala          ###   ########.fr        #
+#    Updated: 2021/11/28 18:24:40 by thakala          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -77,7 +77,8 @@ FUNCTIONS_BONUS = \
 	ft_memdup \
 	ft_isspace \
 	ft_strpbrk \
-	ft_strsep
+	ft_strsep \
+	ft_strspn
 
 FUNCTIONS_ALL = \
 	$(FUNCTIONS) \
@@ -134,11 +135,6 @@ evaldirectories:
 foreach: subsystem
 	$(foreach ft, $(FUNCTIONS), \
 	$(CLANG) $(CPL_FLG) $(ft)/main.c \
-		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/$(ft)/$(ft);)
-
-foreach_debug: subsystem
-	$(foreach ft, $(FUNCTIONS), \
-	$(CLANG) $(CPL_DEBUG) $(LIB_ROOT)/$(ft).c $(ft)/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/$(ft)/$(ft);)
 ft_memset: subsystem ft_memset/main.c
 	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_memset.c ft_memset/main.c \
@@ -388,6 +384,10 @@ ft_strsep: subsystem ft_strsep/main.c
 	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strsep.c ft_strsep/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strsep/ft_strsep
 
+ft_strspn: subsystem ft_strspn/main.c
+	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strspn.c ft_strspn/main.c \
+		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strspn/ft_strspn
+
 ft_memset_debug: $(LIB_ROOT)/ft_memset.c ft_memset/main.c
 	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_memset.c ft_memset/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memset/ft_memset
@@ -635,3 +635,7 @@ ft_strpbrk_debug: $(LIB_ROOT)/ft_strpbrk.c ft_strpbrk/main.c
 ft_strsep_debug: $(LIB_ROOT)/ft_strsep.c ft_strsep/main.c
 	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strsep.c ft_strsep/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strsep/ft_strsep
+
+ft_strspn_debug: $(LIB_ROOT)/ft_strspn.c ft_strspn/main.c
+	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strspn.c ft_strspn/main.c \
+		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strspn/ft_strspn
