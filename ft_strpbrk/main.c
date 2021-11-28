@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 16:37:17 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/28 16:58:49 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/28 17:00:52 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ static int	ft_test(const char *origin, const char *charset)
 		result = strpbrk(origin, charset) != ft_strpbrk(origin, charset);
 		origin++;
 	}
+	result = strpbrk(origin, charset) != ft_strpbrk(origin, charset);
 	return (result);
 }
 
