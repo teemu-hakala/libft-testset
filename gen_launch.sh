@@ -56,7 +56,11 @@ ft_lstdelone
 ft_lstdel
 ft_lstadd
 ft_lstiter
-ft_lstmap"
+ft_lstmap
+ft_memdup
+ft_isspace
+ft_strpbrk
+ft_strsep"
 
 for v in $s; do
 echo "		{"
