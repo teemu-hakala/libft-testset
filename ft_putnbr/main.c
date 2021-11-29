@@ -6,13 +6,17 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 09:32:21 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/29 09:43:42 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/29 10:52:16 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../ft_tests.h"
+#include <stdio.h>
 
 static int	ft_test(int numeral)
 {
 	ft_putnbr(numeral);
+	printf("\n");
 	return (0);
 }
 
@@ -21,6 +25,7 @@ static int	ft_test_range(int from, int upto)
 	ft_test(from);
 	while (from++ < upto)
 		ft_test(from);
+	return (0);
 }
 
 int	main(void)
