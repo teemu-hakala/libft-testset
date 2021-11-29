@@ -60,7 +60,7 @@ ft_lstmap"
 
 for value in $Strings; do
 	#norminette ../libft/$value.c
-	make $value
+	#make $value
 	cd ./_programs/$value/
 	./$value
 	cd ../../
