@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 22:35:30 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/29 23:14:30 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/29 23:29:07 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-static int	ft_test(const char *src)
+static int	ft_test(const char *src, size_t dstsize)
 {
 	char	*std_dst;
 	char	*ft_dst;
@@ -27,8 +27,10 @@ static int	ft_test(const char *src)
 	ft_dst = (char *)malloc(sizeof(char) * l_dst);
 	memset(std_dst, 1, l_dst);
 	memcpy(ft_dst, std_dst, l_dst);
-	r_cmp = strlcpy(std_dst + 3, src, l_dst - 3) \
-	== ft_strlcpy(ft_dst + 3, src, l_dst - 3);
+	if (dstsize == (size_t)(-1))
+		dstsize = l_dst - 3;
+	r_cmp = strlcpy(std_dst + 3, src, dstsize) \
+	== ft_strlcpy(ft_dst + 3, src, dstsize);
 	r_memcmp = memcmp(std_dst, ft_dst, l_dst);
 	free(std_dst);
 	free(ft_dst);
@@ -64,17 +66,33 @@ static int	ft_test_nested(const char *src1, const char *src2)
 	return (!(r_cmp == 2 && !r_memcmp));
 }
 
+static int	ft_test_loop(const char *src)
+{
+	size_t	dstsize;
+	int		result;
+
+	dstsize = strlen(src) + 1;
+	while (dstsize--)
+	{
+		result = ft_test(src, dstsize);
+		if (result)
+			break ;
+	}
+	return (result);
+}
+
 int	main(void)
 {
-	if (ft_test("")
-		|| ft_test("\0")
-		|| ft_test(" ")
-		|| ft_test("u")
-		|| ft_test("r")
+	if (ft_test("", (size_t)(-1))
+		|| ft_test("\0", (size_t)(-1))
+		|| ft_test(" ", (size_t)(-1))
+		|| ft_test("u", (size_t)(-1))
+		|| ft_test("r", (size_t)(-1))
 		|| ft_test_nested("n", "ice")
 		|| ft_test_nested("re", "ally")
 		|| ft_test_nested("testing", "testing")
-		|| ft_test_nested("testing", "gnitset"))
+		|| ft_test_nested("testing", "gnitset")
+		|| ft_test_loop("very hard"))
 	{
 		printf("KO: ft_strlcpy\n");
 		return (1);
