@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 22:35:30 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/29 23:11:04 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/29 23:14:30 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ static int	ft_test_nested(const char *src1, const char *src2)
 	ft_result = ft_strlcpy(ft_dst + 4 + ft_result, src2, \
 	l_dst - 4 - ft_result);
 	r_cmp += std_result == ft_result;
-	r_memcmp = memcmp(std_result, ft_result, l_dst);
+	r_memcmp = memcmp(std_dst, ft_dst, l_dst);
 	free(std_dst);
 	free(ft_dst);
 	return (!(r_cmp == 2 && !r_memcmp));
