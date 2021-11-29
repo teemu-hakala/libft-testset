@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 09:32:21 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/29 09:40:51 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/29 09:43:42 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	main(void)
 		|| ft_test(987654321)
 		|| ft_test((int)0x7FFFFFFF))
 	{
-
+		return (1);
 	}
 	printf("Observe results in stdout.\n");
 	return (0);
