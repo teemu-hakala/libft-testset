@@ -6,9 +6,12 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 19:44:19 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/29 09:23:09 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/29 09:25:52 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../ft_tests.h"
+#include <stdio.h>
 
 static int	ft_test(const char *string, const char *charset)
 {
