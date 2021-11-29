@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 10:05:03 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/28 19:29:36 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/29 23:13:15 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,10 +49,10 @@ void	ft_memdel(void **ap);
 char	*ft_strnew(size_t size);
 void	ft_strdel(char **as);
 void	ft_strclr(char *s);
-void	ft_striter(char *s, void (*f)(char *));
-void	ft_striteri(char *s, void (*f)(unsigned int, char *));
-char	*ft_strmap(char const *s, char (*f)(char));
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striter(char *s, void (*f)(char *s));
+void	ft_striteri(char *s, void (*f)(unsigned int i, char *s));
+char	*ft_strmap(char const *s, char (*f)(char c));
+char	*ft_strmapi(char const *s, char (*f)(unsigned int i, char c));
 int		ft_strequ(char const *s1, char const *s2);
 int		ft_strnequ(char const *s1, char const *s2, size_t n);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
@@ -77,8 +77,8 @@ typedef struct s_list
 }	t_list;
 
 t_list	*ft_lstnew(void const *content, size_t content_size);
-void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
-void	ft_lstdel(t_list **alst, void (*del)(void *, size_t));
+void	ft_lstdelone(t_list **alst, void (*del)(void *c, size_t s));
+void	ft_lstdel(t_list **alst, void (*del)(void *c, size_t s));
 void	ft_lstadd(t_list **alst, t_list *new);
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
@@ -89,5 +89,6 @@ char	*ft_strpbrk(const char *s, const char *charset);
 char	*ft_strsep(char **stringp, const char *delim);
 size_t	ft_strspn(const char *s, const char *charset);
 size_t	ft_strcspn(const char *s, const char *charset);
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 
 #endif

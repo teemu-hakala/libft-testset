@@ -62,7 +62,8 @@ ft_isspace
 ft_strpbrk
 ft_strsep
 ft_strspn
-ft_strcspn"
+ft_strcspn
+ft_strlcpy"
 
 for v in $s; do
 echo "		{"
