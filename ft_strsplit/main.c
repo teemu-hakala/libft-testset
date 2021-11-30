@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 12:09:08 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/30 19:20:28 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/30 19:30:47 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,11 @@ static int	ft_test_either(const char *str, const char chr, char **ref1,
 
 int	main(void)
 {
-	if (ft_test_either("", '*',
+	if (ft_test_either("", '\0',
+			(char *[]){"", NULL}, (char *[]){NULL})
+		|| ft_test_either("", '*',
+			(char *[]){"", NULL}, (char *[]){NULL})
+		|| ft_test_either("*", '*',
 			(char *[]){"", NULL}, (char *[]){NULL})
 		|| ft_test_either("******", '*',
 			(char *[]){"", NULL}, (char *[]){NULL})
