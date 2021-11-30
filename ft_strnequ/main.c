@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
+/*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 19:00:57 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/14 20:00:35 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/30 17:54:40 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ static int	ft_test_loop(const char *s1, const char *s2, size_t upto)
 int	main(void)
 {
 	if (!ft_test("", "", 0, 1)
+		|| !ft_test("a", "b", 0, 1)
 		|| !ft_test("", "", 1, 1)
 		|| !ft_test_loop("equal", "equal", 6)
 		|| !ft_test_loop("Not equal", "not equal", 10)
