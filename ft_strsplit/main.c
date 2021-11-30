@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 12:09:08 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/30 19:14:58 by thakala          ###   ########.fr       */
+/*   Updated: 2021/11/30 19:20:28 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,6 +89,8 @@ int	main(void)
 		|| ft_test("hi*", '*',
 			(char *[]){"hi", NULL})
 		|| ft_test("*hi", '*',
+			(char *[]){"hi", NULL})
+		|| ft_test("hi", '*',
 			(char *[]){"hi", NULL}))
 	{
 		printf("KO: ft_strsplit\n");
