@@ -63,7 +63,8 @@ ft_strpbrk
 ft_strsep
 ft_strspn
 ft_strcspn
-ft_strlcpy"
+ft_strlcpy
+ft_strspnsep"
 
 for v in $s; do
 	echo "$v: subsystem $v/main.c"
