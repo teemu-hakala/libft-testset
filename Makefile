@@ -6,7 +6,7 @@
 #    By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/04 19:05:04 by thakala           #+#    #+#              #
-#    Updated: 2021/12/05 14:19:32 by thakala          ###   ########.fr        #
+#    Updated: 2021/12/05 14:23:55 by thakala          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -80,7 +80,8 @@ FUNCTIONS_BONUS = \
 	ft_strsep \
 	ft_strspn \
 	ft_strcspn \
-	ft_strlcpy
+	ft_strlcpy \
+	ft_strspnsep
 
 FUNCTIONS_ALL = \
 	$(FUNCTIONS) \
