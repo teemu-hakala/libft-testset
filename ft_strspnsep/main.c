@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 14:02:39 by thakala           #+#    #+#             */
-/*   Updated: 2021/12/05 14:22:51 by thakala          ###   ########.fr       */
+/*   Updated: 2021/12/06 13:21:34 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static int	ft_test(const char *base, const char *delim,
 	while (1)
 	{
 		token_ft = ft_strspnsep(&ft_string, delim);
-		if (!token_ref && !token_ft)
+		if (!*token_ref && !token_ft)
 			break ;
 		if (strcmp(*token_ref++, token_ft))
 		{
