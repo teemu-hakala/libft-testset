@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:58:29 by thakala           #+#    #+#             */
-/*   Updated: 2021/12/05 13:59:07 by thakala          ###   ########.fr       */
+/*   Updated: 2021/12/08 12:44:34 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,10 @@ int	main(void)
 		|| !ft_test("a")
 		|| !ft_test("+a")
 		|| !ft_test("-b")
+		|| !ft_test("+0872346")
+		|| !ft_test("-0654673")
+		|| !ft_test("+0x901329")
+		|| !ft_test("-0x764981")
 		|| !ft_test("7")
 		|| !ft_test("+7a3")
 		|| !ft_test("\t\n\r\v\f  469 \n")
@@ -53,7 +57,12 @@ int	main(void)
 		return (1);
 	}
 	printf("OK: ft_atoi\n");
-	if (!ft_test("9999999999999999999999999999999998"))
-		printf("No long max protection\n");
+	if (!ft_test("9999999999999999999999999999999998")
+		||!ft_test("-9999999999999999999999999999999998"))
+	{
+		printf("No long max or min protection\n");
+		return (1);
+	}
+	printf("long max and min protection");
 	return (0);
 }
