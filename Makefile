@@ -6,7 +6,7 @@
 #    By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/04 19:05:04 by thakala           #+#    #+#              #
-#    Updated: 2021/12/05 14:23:55 by thakala          ###   ########.fr        #
+#    Updated: 2021/12/08 21:16:55 by thakala          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -406,6 +406,10 @@ ft_strspnsep: subsystem ft_strspnsep/main.c
 	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strspnsep.c ft_strspnsep/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strspnsep/ft_strspnsep
 
+ft_memjoin: subsystem ft_memjoin/main.c
+	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_memjoin.c ft_memjoin/main.c \
+		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memjoin/ft_memjoin
+
 ft_memset_debug: $(LIB_ROOT)/ft_memset.c ft_memset/main.c
 	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_memset.c ft_memset/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memset/ft_memset
@@ -669,3 +673,8 @@ ft_strlcpy_debug: $(LIB_ROOT)/ft_strlcpy.c ft_strlcpy/main.c
 ft_strspnsep_debug: $(LIB_ROOT)/ft_strspnsep.c ft_strspnsep/main.c
 	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_strspnsep.c ft_strspnsep/main.c \
 		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_strspnsep/ft_strspnsep
+
+ft_memjoin_debug: $(LIB_ROOT)/ft_memjoin.c ft_memjoin/main.c
+	$(CLANG) $(CPL_FLG) $(LIB_ROOT)/ft_memjoin.c ft_memjoin/main.c \
+		-L$(LIB_ROOT) -lft -o $(PRG_DIR)/ft_memjoin/ft_memjoin
+

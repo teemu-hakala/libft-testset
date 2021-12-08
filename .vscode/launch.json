@@ -898,6 +898,49 @@
 			"externalConsole": false,
 			"MIMode": "lldb",
 			"preLaunchTask": "C/C++: clang build ft_strcspn"
+		},
+
+		{
+			"name": "clang - ft_strlcpy build and debug",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/libft-testset/_programs/ft_strlcpy/ft_strlcpy",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "lldb",
+			"preLaunchTask": "C/C++: clang build ft_strlcpy"
+		},
+
+		{
+			"name": "clang - ft_strspnsep build and debug",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/libft-testset/_programs/ft_strspnsep/ft_strspnsep",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "lldb",
+			"preLaunchTask": "C/C++: clang build ft_strspnsep"
+		},
+
+		{
+			"name": "clang - ft_memjoin build and debug",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/libft-testset/_programs/ft_memjoin/ft_memjoin",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "lldb",
+			"preLaunchTask": "C/C++: clang build ft_memjoin"
 		}
+
 	]
 }

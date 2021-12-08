@@ -1727,6 +1727,88 @@
 			],
 			"group": "build",
 			"detail": "compiler: /usr/bin/clang"
+		},
+
+		{
+			"type": "cppbuild",
+			"label": "C/C++: clang build ft_strlcpy",
+			"command": "/usr/bin/clang",
+			"args": [
+				"-g",
+				"-Wall",
+				"-Werror",
+				"-Wextra",
+				"-Wconversion",
+				"${workspaceFolder}/libft-testset/ft_strlcpy/main.c",
+				"${workspaceFolder}/libft/ft_strlcpy.c",
+				"-L${workspaceFolder}/libft",
+				"-lft",
+				"-o",
+				"${workspaceFolder}/libft-testset/_programs/ft_strlcpy/ft_strlcpy"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/clang"
+		},
+
+		{
+			"type": "cppbuild",
+			"label": "C/C++: clang build ft_strspnsep",
+			"command": "/usr/bin/clang",
+			"args": [
+				"-g",
+				"-Wall",
+				"-Werror",
+				"-Wextra",
+				"-Wconversion",
+				"${workspaceFolder}/libft-testset/ft_strspnsep/main.c",
+				"${workspaceFolder}/libft/ft_strspnsep.c",
+				"-L${workspaceFolder}/libft",
+				"-lft",
+				"-o",
+				"${workspaceFolder}/libft-testset/_programs/ft_strspnsep/ft_strspnsep"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/clang"
+		},
+
+		{
+			"type": "cppbuild",
+			"label": "C/C++: clang build ft_memjoin",
+			"command": "/usr/bin/clang",
+			"args": [
+				"-g",
+				"-Wall",
+				"-Werror",
+				"-Wextra",
+				"-Wconversion",
+				"${workspaceFolder}/libft-testset/ft_memjoin/main.c",
+				"${workspaceFolder}/libft/ft_memjoin.c",
+				"-L${workspaceFolder}/libft",
+				"-lft",
+				"-o",
+				"${workspaceFolder}/libft-testset/_programs/ft_memjoin/ft_memjoin"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/clang"
 		}
+
 	]
 }

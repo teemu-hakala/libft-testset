@@ -1,84 +1,39 @@
 #!/bin/bash
-s="ft_memset
-ft_bzero
-ft_memcpy
-ft_memccpy
-ft_memmove
-ft_memchr
-ft_memcmp
-ft_strlen
-ft_strdup
-ft_strcpy
-ft_strncpy
-ft_strcat
-ft_strncat
-ft_strlcat
-ft_strchr
-ft_strrchr
-ft_strstr
-ft_strnstr
-ft_strcmp
-ft_strncmp
-ft_atoi
-ft_isalpha
-ft_isdigit
-ft_isalnum
-ft_isascii
-ft_isprint
-ft_toupper
-ft_tolower
-ft_memalloc
-ft_memdel
-ft_strnew
-ft_strdel
-ft_strclr
-ft_striter
-ft_striteri
-ft_strmap
-ft_strmapi
-ft_strequ
-ft_strnequ
-ft_strsub
-ft_strjoin
-ft_strtrim
-ft_strsplit
-ft_itoa
-ft_putchar
-ft_putstr
-ft_putendl
-ft_putnbr
-ft_putchar_fd
-ft_putstr_fd
-ft_putendl_fd
-ft_putnbr_fd
-ft_lstnew
-ft_lstdelone
-ft_lstdel
-ft_lstadd
-ft_lstiter
-ft_lstmap
-ft_memdup
-ft_isspace
-ft_strpbrk
-ft_strsep
-ft_strspn
-ft_strcspn
-ft_strlcpy
-ft_strspnsep"
 
-for v in "$@"; do
-echo "		{"
-echo "			\"name\": \"clang - $v build and debug\","
-echo "			\"type\": \"cppdbg\","
-echo "			\"request\": \"launch\","
-echo "			\"program\": \"\${workspaceFolder}/libft-testset/_programs/$v/$v\","
-echo "			\"args\": [],"
-echo "			\"stopAtEntry\": false,"
-echo "			\"cwd\": \"\${workspaceFolder}\","
-echo "			\"environment\": [],"
-echo "			\"externalConsole\": false,"
-echo "			\"MIMode\": \"lldb\","
-echo "			\"preLaunchTask\": \"C/C++: clang build $v\""
-echo "		},"
+i=0;
+for function in "$@";
+do
+	((i++));
+done
+
+echo "{"
+echo "	// Use IntelliSense to learn about possible attributes."
+echo "	// Hover to view descriptions of existing attributes."
+echo "	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387"
+echo "	\"version\": \"0.2.0\","
+echo "	\"configurations\": ["
+
+for function in "$@"; do
+	echo "		{"
+	echo "			\"name\": \"clang - $function build and debug\","
+	echo "			\"type\": \"cppdbg\","
+	echo "			\"request\": \"launch\","
+	echo "			\"program\": \"\${workspaceFolder}/libft-testset/_programs/$function/$function\","
+	echo "			\"args\": [],"
+	echo "			\"stopAtEntry\": false,"
+	echo "			\"cwd\": \"\${workspaceFolder}\","
+	echo "			\"environment\": [],"
+	echo "			\"externalConsole\": false,"
+	echo "			\"MIMode\": \"lldb\","
+	echo "			\"preLaunchTask\": \"C/C++: clang build $function\""
+	((i--));
+	if ((i != 0)); then
+		echo "		},"
+	else
+		echo "		}"
+	fi
 echo ""
 done
+
+echo "	]"
+echo "}"
