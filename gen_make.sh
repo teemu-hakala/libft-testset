@@ -66,14 +66,14 @@ ft_strcspn
 ft_strlcpy
 ft_strspnsep"
 
-for v in $s; do
+for v in "$@"; do
 	echo "$v: subsystem $v/main.c"
 	echo "	\$(CLANG) \$(CPL_FLG) \$(LIB_ROOT)/$v.c $v/main.c \\"
 	echo "		-L\$(LIB_ROOT) -lft -o \$(PRG_DIR)/$v/$v"
 	echo ""
 done
 
-for v in $s; do
+for v in "$@"; do
 	#echo "\$(PRG_DIR)/$v/$v: \$(SRC_DIR)/$v.c \\"
 	#echo "$v/main.c"
 	echo -n "$v"
@@ -83,10 +83,10 @@ for v in $s; do
 	echo ""
 done
 
-for v in $s; do
+for v in "$@"; do
 	echo "\$(PRG_DIR)/$v/$v \\"
 done
 
-for v in $s; do
+for v in "$@"; do
 	echo "$v \\"
 done

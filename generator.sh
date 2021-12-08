@@ -1,5 +1,5 @@
 #!/bin/bash
-s="ft_memset
+ft="ft_memset
 ft_bzero
 ft_memcpy
 ft_memccpy
@@ -64,21 +64,9 @@ ft_strsep
 ft_strspn
 ft_strcspn
 ft_strlcpy
-ft_strspnsep"
+ft_strspnsep
+ft_memjoin"
 
-for v in "$@"; do
-echo "		{"
-echo "			\"name\": \"clang - $v build and debug\","
-echo "			\"type\": \"cppdbg\","
-echo "			\"request\": \"launch\","
-echo "			\"program\": \"\${workspaceFolder}/libft-testset/_programs/$v/$v\","
-echo "			\"args\": [],"
-echo "			\"stopAtEntry\": false,"
-echo "			\"cwd\": \"\${workspaceFolder}\","
-echo "			\"environment\": [],"
-echo "			\"externalConsole\": false,"
-echo "			\"MIMode\": \"lldb\","
-echo "			\"preLaunchTask\": \"C/C++: clang build $v\""
-echo "		},"
-echo ""
-done
+./gen_make.sh $ft > makeconf.conf
+./gen_tasks.sh $ft > taskconf.conf
+./gen_launch.sh $ft > launchconf.conf
