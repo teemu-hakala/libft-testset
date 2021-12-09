@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 20:43:48 by thakala           #+#    #+#             */
-/*   Updated: 2021/12/08 21:06:48 by thakala          ###   ########.fr       */
+/*   Updated: 2021/12/08 21:36:37 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static int	ft_test(const char *s1, const char *s2, const char *reference)
 	char	*joined_str;
 	int		result;
 
-	joined_str = (char *)ft_memjoin(s1, s2);
+	joined_str = (char *)ft_memjoin(s1, s2, strlen(s1), strlen(s2) + 1);
 	if (!joined_str)
 	{
 		printf("Memory allocation error\n");
@@ -37,13 +37,14 @@ static int	ft_test_nested(const char *s1, const char *s2, const char *s3,
 	char	*nested_str;
 	int		result;
 
-	joined_str = (char *)ft_memjoin(s1, s2);
+	joined_str = (char *)ft_memjoin(s1, s2, strlen(s1), strlen(s1) + 1);
 	if (!joined_str)
 	{
 		printf("Memory allocation error\n");
 		return (1);
 	}
-	nested_str = (char *)ft_memjoin(joined_str, s3);
+	nested_str = (char *)ft_memjoin(joined_str, s3, strlen(joined_str), \
+		strlen(s3));
 	if (!nested_str)
 	{
 		printf("Memory allocation error\n");
@@ -79,7 +80,7 @@ int	main(void)
 		|| ft_test("", "strjoin", "strjoin")
 		|| ft_test("ft_", "strjoin", "ft_strjoin")
 		|| ft_test_nested("OK: ", "ft_", "strjoin", "OK: ft_strjoin")
-		|| ft_test_array((int []){-2147483648, -100000, -2, -1, 0}, \
+		|| ft_test_memory((int []){-2147483648, -100000, -2, -1, 0}, \
 			(int []){1, 2, 100000, 2147483647}, sizeof(int) * 5, \
 			sizeof(int) * 4, (int []){-2147483648, -100000, -2, -1, 0, \
 			1, 2, 100000, 2147483647}))
