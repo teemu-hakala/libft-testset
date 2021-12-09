@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
+/*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 15:44:25 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/17 16:18:22 by thakala          ###   ########.fr       */
+/*   Updated: 2021/12/09 10:19:06 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ static int	ft_test(char *string, unsigned int start,
 
 	output = ft_strsub(string, start, length);
 	result = strcmp(output, reference);
+	free(output);
 	return (result);
 }
 
