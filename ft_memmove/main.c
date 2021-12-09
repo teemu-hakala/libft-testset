@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thakala <thakala@student.42.fr>            +#+  +:+       +#+        */
+/*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 15:33:46 by thakala           #+#    #+#             */
-/*   Updated: 2021/11/10 14:33:14 by thakala          ###   ########.fr       */
+/*   Updated: 2021/12/09 20:02:20 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,11 +64,28 @@ static int	ft_test_overlap(const char *dstsrc, size_t offset, size_t direction,
 	return (result);
 }
 
+static int	ft_test_overlap_loop(const char *dstsrc, size_t len)
+{
+	size_t	offset;
+
+	offset = 0;
+	while (offset < len)
+		if (ft_test_overlap(dstsrc, offset++, 0, len))
+			return (1);
+	while (offset + 1)
+		if (ft_test_overlap(dstsrc, offset--, 1, len))
+			return (1);
+	return (0);
+}
+
 int	main(void)
 {
 	if (ft_test("destination", 12, "source", 6)
 		|| ft_test_overlap("destinationsource", 3, 0, 5)
-		|| ft_test_overlap("destinationsource", 3, 1, 5))
+		|| ft_test_overlap("destinationsource", 3, 1, 5)
+		|| ft_test_overlap("Just to see if an evaluated ft_memmove is wrong or \
+		not with a ridiculously long string of characters, in case I called it \
+		wrongfully a dubious solution.", 120))
 	{
 		printf("KO: ft_memmove\n");
 		return (1);
