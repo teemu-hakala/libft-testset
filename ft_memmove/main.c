@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 15:33:46 by thakala           #+#    #+#             */
-/*   Updated: 2021/12/09 20:03:49 by thakala          ###   ########.fr       */
+/*   Updated: 2021/12/09 20:15:27 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ static int	ft_test_overlap(const char *dstsrc, size_t offset, size_t direction,
 	char	*ft_destinationsource;
 	int		result;
 
+	printf("%zu\n", offset);
 	std_destinationsource = strdup(dstsrc);
 	ft_destinationsource = strdup(dstsrc);
 	if (!std_destinationsource || !ft_destinationsource)
@@ -85,7 +86,27 @@ int	main(void)
 		|| ft_test_overlap("destinationsource", 3, 1, 5)
 		|| ft_test_overlap_loop("Just to see if an evaluated ft_memmove is \
 		wrong or not with a ridiculously long string of characters, in case I \
-		called it wrongfully a dubious solution.", 120))
+		called it wrongfully a dubious solution. Just to see if an evaluated ft_memmove is \
+		wrong or not with a ridiculously long string of characters, in case I \
+		called it wrongfully a dubious solution. Just to see if an evaluated ft_memmove is \
+		wrong or not with a ridiculously long string of characters, in case I \
+		called it wrongfully a dubious solution. Just to see if an evaluated ft_memmove is \
+		wrong or not with a ridiculously long string of characters, in case I \
+		called it wrongfully a dubious solution. Just to see if an evaluated ft_memmove is \
+		wrong or not with a ridiculously long string of characters, in case I \
+		called it wrongfully a dubious solution. Just to see if an evaluated ft_memmove is \
+		wrong or not with a ridiculously long string of characters, in case I \
+		called it wrongfully a dubious solution. Just to see if an evaluated ft_memmove is \
+		wrong or not with a ridiculously long string of characters, in case I \
+		called it wrongfully a dubious solution. Just to see if an evaluated ft_memmove is \
+		wrong or not with a ridiculously long string of characters, in case I \
+		called it wrongfully a dubious solution. Just to see if an evaluated ft_memmove is \
+		wrong or not with a ridiculously long string of characters, in case I \
+		called it wrongfully a dubious solution. Just to see if an evaluated ft_memmove is \
+		wrong or not with a ridiculously long string of characters, in case I \
+		called it wrongfully a dubious solution. Just to see if an evaluated ft_memmove is \
+		wrong or not with a ridiculously long string of characters, in case I \
+		called it wrongfully a dubious solution.", 420))
 	{
 		printf("KO: ft_memmove\n");
 		return (1);
