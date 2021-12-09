@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 15:33:46 by thakala           #+#    #+#             */
-/*   Updated: 2021/12/09 20:02:20 by thakala          ###   ########.fr       */
+/*   Updated: 2021/12/09 20:03:49 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,9 +83,9 @@ int	main(void)
 	if (ft_test("destination", 12, "source", 6)
 		|| ft_test_overlap("destinationsource", 3, 0, 5)
 		|| ft_test_overlap("destinationsource", 3, 1, 5)
-		|| ft_test_overlap("Just to see if an evaluated ft_memmove is wrong or \
-		not with a ridiculously long string of characters, in case I called it \
-		wrongfully a dubious solution.", 120))
+		|| ft_test_overlap_loop("Just to see if an evaluated ft_memmove is \
+		wrong or not with a ridiculously long string of characters, in case I \
+		called it wrongfully a dubious solution.", 120))
 	{
 		printf("KO: ft_memmove\n");
 		return (1);
