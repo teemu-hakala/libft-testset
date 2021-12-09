@@ -6,12 +6,13 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 15:44:25 by thakala           #+#    #+#             */
-/*   Updated: 2021/12/09 10:19:06 by thakala          ###   ########.fr       */
+/*   Updated: 2021/12/09 13:54:17 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_tests.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 static int	ft_test(char *string, unsigned int start,
 	size_t length, char *reference)
