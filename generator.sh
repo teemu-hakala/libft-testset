@@ -65,7 +65,9 @@ ft_strspn
 ft_strcspn
 ft_strlcpy
 ft_strspnsep
-ft_memjoin"
+ft_memjoin
+ft_sign
+ft_abs"
 
 ./gen_make.sh $ft > makeconf.conf
 ./gen_tasks.sh $ft > taskconf.conf
