@@ -11,6 +11,8 @@ echo "{"
 echo "	\"version\": \"2.0.0\","
 echo "	\"tasks\": ["
 
+cat maketask
+
 for ft in "$@"; do
 	echo "		{"
 	echo "			\"type\": \"cppbuild\","
