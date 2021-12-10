@@ -13,6 +13,8 @@ echo "	\"tasks\": ["
 
 cat maketask
 
+cat maintask
+
 for ft in "$@"; do
 	echo "		{"
 	echo "			\"type\": \"cppbuild\","
@@ -38,7 +40,8 @@ for ft in "$@"; do
 	echo "				\"\$gcc\""
 	echo "			],"
 	echo "			\"group\": \"build\","
-	echo "			\"detail\": \"compiler: /usr/bin/clang\""
+	echo "			\"detail\": \"compiler: /usr/bin/clang\","
+	echo "			\"dependsOn\": \"make libft\""
 	((i--));
 	if ((i != 0)); then
 		echo "		},"
