@@ -6,7 +6,7 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 15:33:46 by thakala           #+#    #+#             */
-/*   Updated: 2021/12/09 20:15:27 by thakala          ###   ########.fr       */
+/*   Updated: 2021/12/16 20:17:22 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ static int	ft_test_overlap(const char *dstsrc, size_t offset, size_t direction,
 	char	*ft_destinationsource;
 	int		result;
 
-	printf("%zu\n", offset);
 	std_destinationsource = strdup(dstsrc);
 	ft_destinationsource = strdup(dstsrc);
 	if (!std_destinationsource || !ft_destinationsource)
