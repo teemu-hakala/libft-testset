@@ -1,0 +1,28 @@
+		{
+			"type": "cppbuild",
+			"label": "C/C++: get_next_line clang build",
+			"command": "/usr/bin/clang",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"-Wall",
+				"-Wextra",
+				"-Werror",
+				"${workspaceFolder}/main.c",
+				"-L",
+				"libft/",
+				"-l",
+				"ft",
+				"-o",
+				"${workspaceFolder}/get_next_line_test"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/clang"
+		},
+

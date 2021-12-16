@@ -5,6 +5,19 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
+			"name": "clang - get_next_line build and debug",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${fileDirname}/${fileBasenameNoExtension}",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${fileDirname}",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "lldb",
+			"preLaunchTask": "C/C++: get_next_line clang build"
+		},
+		{
 			"name": "clang - ft_memset build and debug",
 			"type": "cppdbg",
 			"request": "launch",

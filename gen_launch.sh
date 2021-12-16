@@ -13,6 +13,8 @@ echo "	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=8
 echo "	\"version\": \"0.2.0\","
 echo "	\"configurations\": ["
 
+cat mainlaunch
+
 for function in "$@"; do
 	echo "		{"
 	echo "			\"name\": \"clang - $function build and debug\","
