@@ -940,6 +940,34 @@
 			"externalConsole": false,
 			"MIMode": "lldb",
 			"preLaunchTask": "C/C++: clang build ft_memjoin"
+		},
+
+		{
+			"name": "clang - ft_sign build and debug",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/libft-testset/_programs/ft_sign/ft_sign",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "lldb",
+			"preLaunchTask": "C/C++: clang build ft_sign"
+		},
+
+		{
+			"name": "clang - ft_abs build and debug",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/libft-testset/_programs/ft_abs/ft_abs",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "lldb",
+			"preLaunchTask": "C/C++: clang build ft_abs"
 		}
 
 	]

@@ -1,0 +1,10 @@
+		{
+			"type": "shell",
+			"label": "make libft",
+			"command": "${workspaceFolder}/libft-testset/make.sh",
+			"options": {
+				"shell": {"executable": "/bin/bash"},
+				"cwd": "${workspaceFolder}/libft"
+			}
+		},
+
