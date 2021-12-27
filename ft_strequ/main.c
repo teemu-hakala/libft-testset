@@ -6,11 +6,12 @@
 /*   By: thakala <thakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 18:50:45 by thakala           #+#    #+#             */
-/*   Updated: 2021/12/22 18:09:48 by thakala          ###   ########.fr       */
+/*   Updated: 2021/12/27 21:05:01 by thakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_tests.h"
+#include <stdlib.h>
 #include <stdio.h>
 
 static int	ft_test(const char *s1, const char *s2, int expected)
